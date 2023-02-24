@@ -22,7 +22,7 @@ def read(fname):
 exec(open(os.path.join(ROOT_DIR, "earthkit", "version.py")).read())
 
 
-install_requires = ["emohawk", "mir-python"]
+install_requires = []
 
 test_requires = ["pytest"]
 
