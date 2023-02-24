@@ -8,10 +8,12 @@
 #
 
 import emohawk as data
+import mir as interpolate
 
 from .version import __version__
 
 __all__ = [
     "data",
+    "interpolate",
     "__version__",
 ]
