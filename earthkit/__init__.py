@@ -7,13 +7,15 @@
 # nor does it submit to any jurisdiction.
 #
 
-import emohawk as data
+import earthkit.data as data
+import earthkit.maps as maps
 import mir as interpolate
 
 from .version import __version__
 
 __all__ = [
     "data",
+    "maps",
     "interpolate",
     "__version__",
 ]
