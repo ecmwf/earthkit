@@ -1,8 +1,5 @@
 # These are the requirements for readthedoc
-docutils<=0.16.0
 Pygments>=2.6.1
 Sphinx>=4.4.0
-setuptools>=51.0.0
-sphinx-rtd-theme>=0.5.0
-sphinx-autoapi
+sphinx-rtd-theme
 nbsphinx
