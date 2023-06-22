@@ -9,13 +9,13 @@
 
 import earthkit.data as data
 import earthkit.maps as maps
-import mir as interpolate
+# import earthkit.regrid as regrid
 
 from .version import __version__
 
 __all__ = [
     "data",
     "maps",
-    "interpolate",
+    # "regrid",
     "__version__",
 ]
