@@ -10,7 +10,9 @@ import datetime
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath("../"))
+# Adds path to the folder _ext, where extensions are stored
+sys.path.insert(0, os.path.abspath("."))
+sys.path.append(os.path.abspath("./_ext"))
 
 # -- Project information -----------------------------------------------------
 
@@ -29,6 +31,7 @@ copyright = "%s, European Centre for Medium-Range Weather Forecasts (ECMWF)" % (
 extensions = [
     "sphinx_rtd_theme",
     "nbsphinx",
+    "xref",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -53,3 +56,16 @@ html_theme = "sphinx_rtd_theme"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
+html_css_files = ["style.css"]
+
+
+xref_links = {
+    "earthkit-data": (
+        "earthkit-data",
+        "https://earthkit-data.readthedocs.io",
+    ),
+     "eccodes": (
+        "ecCodes",
+        "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
+    ),
+}
