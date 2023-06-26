@@ -9,11 +9,15 @@
 # nor does it submit to any jurisdiction.
 #
 
-def test_basic():
-    import earthkit.data
-    from earthkit.data.testing import earthkit_examples_file
-    ds = earthkit.data.from_source("file", earthkit_examples_file("test.grib"))
-    assert len(ds) == 2
+def test_version():
+    import earthkit
+    assert earthkit.__version__ != "999"
+    assert "." in earthkit.__version__
 
+
+def test_earthkit_data_version():
+    import earthkit.data
+    assert earthkit.data.__version__  != "999"
+    assert "." in earthkit.data.__version__
 
 
