@@ -13,7 +13,7 @@ qa:
 
 unit-tests:
 	python -m pytest -vv --cov=. --cov-report=$(COV_REPORT)
-	
+
 conda-env-update:
 	$(CONDA) env update $(CONDAFLAGS) -f environment.yml
 

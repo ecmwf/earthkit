@@ -3,7 +3,7 @@
 Components overview
 =====================
 
-.. list-table:: 
+.. list-table::
     :widths: 20 80
     :header-rows: 1
 

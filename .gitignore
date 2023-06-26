@@ -131,7 +131,7 @@ venv.bak/
 .mypy_cache/
 .dmypy.json
 dmypy.json
-        
+
 # Pyre type checker
 .pyre/
 .pytype
@@ -148,6 +148,5 @@ dmypy.json
 .env
 .idea/
 
-# mac           
+# mac
 .DS_Store
-

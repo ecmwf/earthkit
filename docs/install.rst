@@ -2,7 +2,7 @@ Installation
 ============
 
 .. note::
-    
+
     When installing ``earthkit`` all the available components will be installed for you. If you only need certain components you can install them one by one.
 
 Installing earthkit
@@ -28,4 +28,3 @@ Installing the binary dependencies
 This is the list of components with installation instructions, which have binary dependencies:
 
 -  `eartkit-data <https://earthkit-data.readthedocs.io/en/latest/install.html#installing-the-binary-dependencies>`_
-

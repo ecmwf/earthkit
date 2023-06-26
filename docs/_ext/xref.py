@@ -1,12 +1,10 @@
 # -*- coding: utf-8 -*-
 
 from docutils import nodes
-
 from sphinx.util import caption_ref_re
 
 
 def xref(typ, rawtext, text, lineno, inliner, options={}, content=[]):
-
     title = target = text
     titleistarget = True
     # look if explicit title and target are given with `foo <bar>` syntax
@@ -33,12 +31,10 @@ def xref(typ, rawtext, text, lineno, inliner, options={}, content=[]):
 
 
 def get_refs(app):
-
     xref.links = app.config.xref_links
 
 
 def setup(app):
-
     app.add_config_value("xref_links", {}, True)
     app.add_role("xref", xref)
     app.connect("builder-inited", get_refs)

@@ -9,15 +9,16 @@
 # nor does it submit to any jurisdiction.
 #
 
+
 def test_version():
     import earthkit
+
     assert earthkit.__version__ != "999"
     assert "." in earthkit.__version__
 
 
 def test_earthkit_data_version():
     import earthkit.data
-    assert earthkit.data.__version__  != "999"
+
+    assert earthkit.data.__version__ != "999"
     assert "." in earthkit.data.__version__
-
-
