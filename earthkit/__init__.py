@@ -8,14 +8,14 @@
 #
 
 import earthkit.data as data
-import earthkit.maps as maps
-# import earthkit.regrid as regrid
+#import earthkit.maps as maps
+#import earthkit.regrid as regrid
 
 from .version import __version__
 
 __all__ = [
     "data",
-    "maps",
+    #"maps",
     # "regrid",
     "__version__",
 ]

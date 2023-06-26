@@ -1,0 +1,6 @@
+name: earthkit
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- earthkit-data
