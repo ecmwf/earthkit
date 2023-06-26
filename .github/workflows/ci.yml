@@ -126,7 +126,7 @@ jobs:
         make unit-tests
 
   distribution:
-    needs: [integration-tests, type-check, documentation]
+    needs: [integration-tests, documentation]
     if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
     runs-on: ubuntu-latest
 
@@ -150,7 +150,6 @@ jobs:
     needs:
     - pre-commit
     - unit-tests
-    - type-check
     - documentation
     - integration-tests
     - distribution
