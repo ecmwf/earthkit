@@ -6,11 +6,10 @@ from sphinx.util import caption_ref_re
 
 def xref(typ, rawtext, text, lineno, inliner, options={}, content=[]):
     title = target = text
-    titleistarget = True
+
     # look if explicit title and target are given with `foo <bar>` syntax
     brace = text.find("<")
     if brace != -1:
-        titleistarget = False
         m = caption_ref_re.match(text)
         if m:
             target = m.group(2)
