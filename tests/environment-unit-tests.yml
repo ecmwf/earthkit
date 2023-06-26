@@ -1,0 +1,17 @@
+name: earthkit
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- earthkit-data
+- pip
+- pytest
+- pytest-cov
+- sphinx
+- sphinx-autoapi
+- sphinx_rtd_theme
+- sphinxcontrib-apidoc
+- nbformat
+- nbconvert
+- nbsphinx
+- ipykernel
