@@ -9,13 +9,19 @@
 
 import earthkit.data as data
 import earthkit.maps as maps
+from earthkit import _climate as climate
 # import earthkit.regrid as regrid
+
+data._from_earthkit_package = True
+maps._from_earthkit_package = True
+climate._from_earthkit_package = True
 
 from .version import __version__
 
 __all__ = [
     "data",
     "maps",
+    "climate",
     # "regrid",
     "__version__",
 ]
