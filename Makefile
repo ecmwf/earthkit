@@ -12,7 +12,7 @@ qa:
 	pre-commit run --all-files
 
 unit-tests:
-	cd .. && python -m earthkit pytest -vv --cov=. --cov-report=$(COV_REPORT) && cd -
+	cd .. && python -m pytest earthkit -vv --cov=. --cov-report=$(COV_REPORT) && cd -
 
 conda-env-update:
 	$(CONDA) env update $(CONDAFLAGS) -f environment.yml
