@@ -17,13 +17,12 @@ except ImportError:  # pragma: no cover
     __version__ = "999"
 
 import earthkit.data as data
-
-# import earthkit.maps as maps
+import earthkit.maps as maps
 # import earthkit.regrid as regrid
 
 __all__ = [
     "data",
-    # "maps",
+    "maps",
     # "regrid",
     "__version__",
 ]

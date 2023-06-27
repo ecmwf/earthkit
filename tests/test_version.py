@@ -24,3 +24,8 @@ def test_earthkit_data_version():
     import earthkit.data
 
     assert VERSION_RX.match(earthkit.data.__version__) is not None
+
+def test_earthkit_maps_version():
+    import earthkit.maps
+
+    #assert VERSION_RX.match(earthkit.maps.__version__) is not None
