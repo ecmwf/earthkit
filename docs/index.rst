@@ -18,12 +18,12 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
 
 **earthkit** is still under development, but the first component, :xref:`earthkit-data`, is now available in beta through PyPI, conda-forge and and its GitHub repository.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Examples
-   :titlesonly:
+.. .. toctree::
+..    :maxdepth: 1
+..    :caption: Examples
+..    :titlesonly:
 
-   examples
+..    examples
 
 .. toctree::
     :maxdepth: 1
@@ -32,6 +32,7 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
 
     components_overview
     earthkit-data <https://earthkit-data.readthedocs.io>
+    earthkit-maps <https://earthkit-maps.readthedocs.io>
 
 .. toctree::
    :maxdepth: 1
