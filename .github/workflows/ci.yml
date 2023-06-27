@@ -59,9 +59,7 @@ jobs:
         python -m pip install . --no-deps
     - name: Run tests
       run: |
-        cd ..
-        python -m pytest  earthkit -vv --cov=. --cov-report=$(COV_REPORT)
-        cd -
+        make unit-tests
 
   documentation:
     needs: [unit-tests]
@@ -78,7 +76,7 @@ jobs:
     - name: Install Conda environment with Micromamba
       uses: mamba-org/provision-with-micromamba@v12
       with:
-        environment-file: environment.yml
+        environment-file: environment-docs-test.yml
         environment-name: DEVELOP
         channels: conda-forge
         cache-env: true
@@ -87,7 +85,7 @@ jobs:
           python=3.10
     - name: Install package
       run: |
-        python -m pip install --no-deps -e .
+        python -m pip install --no-deps .
     - name: Build documentation
       run: |
         make docs-build
@@ -122,7 +120,7 @@ jobs:
           python=${{matrix.python-version }}
     - name: Install package
       run: |
-        python -m pip install --no-deps -e .
+        python -m pip install --no-deps .
     - name: Run tests
       run: |
         make unit-tests
