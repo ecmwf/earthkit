@@ -4,5 +4,6 @@ channels:
 - nodefaults
 dependencies:
 - earthkit-data
-- earthkit-maps
-- opencv-python
+- pip:
+  - earthkit-maps
+  - opencv-python
