@@ -60,7 +60,7 @@ jobs:
     - name: Run tests
       run: |
         cd ..
-        python -m pytest -vv --cov=. --cov-report=$(COV_REPORT) earthkit
+        python -m pytest  earthkit -vv --cov=. --cov-report=$(COV_REPORT)
         cd -
 
   documentation:
