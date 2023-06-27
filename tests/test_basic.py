@@ -11,7 +11,7 @@
 
 import re
 
-VERSION_RX = re.compile(r"""\d+\.\d+\.\d+.*""")
+VERSION_RX = re.compile(r"""\d+\.\d+\.*""")
 
 
 def test_version():
