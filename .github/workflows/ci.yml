@@ -144,19 +144,3 @@ jobs:
       with:
         user: __token__
         password: ${{ secrets.PYPI_API_TOKEN }}
-
-  notify:
-    if: always() && ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
-    needs:
-    - pre-commit
-    - unit-tests
-    - documentation
-    - integration-tests
-    - distribution
-    runs-on: ubuntu-latest
-    steps:
-    - name: Trigger Teams notification
-      uses: ecmwf-actions/notify-teams@v1
-      with:
-        incoming_webhook: ${{ secrets.MS_TEAMS_INCOMING_WEBHOOK }}
-        needs_context: ${{ toJSON(needs) }}
