@@ -1,7 +1,9 @@
 .. _components:
 
-Components overview
+Overview
 =====================
+
+This is the sumary of the available ``earthkit`` components.
 
 .. list-table::
     :widths: 20 80
