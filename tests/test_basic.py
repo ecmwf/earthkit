@@ -9,16 +9,16 @@
 # nor does it submit to any jurisdiction.
 #
 
+import re
+
+VERSION_RX = re.compile(r"""\d+\.\d+\.\d+.*""")
 
 def test_version():
     import earthkit
 
-    assert earthkit.__version__ != "999"
-    assert "." in earthkit.__version__
-
+    assert VERSION_RX.match(earthkit.__version__) is not None
 
 def test_earthkit_data_version():
     import earthkit.data
 
-    assert earthkit.data.__version__ != "999"
-    assert "." in earthkit.data.__version__
+    assert VERSION_RX.match(earthkit.data.__version__) is not None
