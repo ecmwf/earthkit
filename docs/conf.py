@@ -64,7 +64,11 @@ xref_links = {
         "earthkit-data",
         "https://earthkit-data.readthedocs.io",
     ),
-     "eccodes": (
+    "earthkit-maps": (
+        "earthkit-maps",
+        "https://earthkit-maps.readthedocs.io",
+    ),
+    "eccodes": (
         "ecCodes",
         "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
     ),

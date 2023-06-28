@@ -1,0 +1,10 @@
+name: earthkit
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- earthkit-data
+- geos
+- pip:
+  - earthkit-maps
+  - opencv-python

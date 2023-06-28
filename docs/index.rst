@@ -12,18 +12,18 @@ Welcome to earthkit's documentation
 
 **earthkit** is a new open-source Python project led by ECMWF, providing powerful tools for speeding up weather and climate science workflows by simplifying data access, processing, analysis, visualisation and much more.
 
-**earthkit** offers **multiple interoperable** :ref:`software components <components>` built on top of well-established open-source Python libraries like numpy, pandas and matplotlib. earthkit also integrates and leverages the robust and operations-ready software stack that is familiar to ECMWF production systems (e.g. :xref:`eccodes`, FDB, etc). 
+**earthkit** offers **multiple interoperable** :ref:`software components <components>` built on top of well-established open-source Python libraries like numpy, pandas and matplotlib. earthkit also integrates and leverages the robust and operations-ready software stack that is familiar to ECMWF production systems (e.g. :xref:`eccodes`, FDB, etc).
 
 The interface of :ref:`earthkit components <components>` is designed to be high-level in order to provide common tools to support activities across ECMWF and beyond. The design of the components also takes **scalability** into account, so researchers can enjoy efficiency whilst providing easier transfer to operations.
 
-**earthkit** is still under development, but the first component, :xref:`earthkit-data`, is now available in beta through PyPI, conda-forge and and its GitHub repository.
+**earthkit** is still under development, but two components, :xref:`earthkit-data` and :xref:`earthkit-maps` are now available in beta through PyPI, conda-forge and and its GitHub repository.
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Examples
-   :titlesonly:
+.. .. toctree::
+..    :maxdepth: 1
+..    :caption: Examples
+..    :titlesonly:
 
-   examples
+..    examples
 
 .. toctree::
     :maxdepth: 1
@@ -32,11 +32,12 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
 
     components_overview
     earthkit-data <https://earthkit-data.readthedocs.io>
+    earthkit-maps <https://earthkit-maps.readthedocs.io>
 
 .. toctree::
    :maxdepth: 1
    :caption: Installation
-   :titlesonly:   
+   :titlesonly:
 
    install
    licence
