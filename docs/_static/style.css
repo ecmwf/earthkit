@@ -1,0 +1,48 @@
+.wy-side-nav-search {
+    background-color: #5d89bb;
+}
+
+/*There is a clash between xarray notebook styles and readthedoc*/
+
+.rst-content dl.xr-attrs dt {
+    all: revert;
+    font-size: 95%;
+    white-space: nowrap;
+}
+
+.rst-content dl.xr-attrs dd {
+    font-size: 95%;
+}
+
+.xr-wrap {
+    font-size: 85%;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: inherit;
+  }
+
+/*
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal !important;
+    vertical-align: top !important;
+}
+
+.wy-table-responsive {
+    margin-bottom: 24px;
+    max-width: 100%;
+    overflow: visible;
+} */
+
+/* Hide notebooks warnings */
+.nboutput .stderr {
+    display: none;
+}
+
+/*
+Set logo size
+*/
+.wy-side-nav-search .wy-dropdown > a img.logo, .wy-side-nav-search > a img.logo {
+    width: 80px;
+}
