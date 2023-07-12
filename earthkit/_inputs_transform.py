@@ -65,7 +65,7 @@ def transform_function_inputs(function, **kwarg_types):
                         # an Error.
                         continue
                     break
-        result = function(**kwargs)
+        result = data.from_object(function(**kwargs))
 
         return result
 
