@@ -10,4 +10,4 @@ dependencies:
 - geos
 - pip:
   - earthkit-maps
-  - opencv-python
+
