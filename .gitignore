@@ -150,3 +150,6 @@ dmypy.json
 
 # mac
 .DS_Store
+
+# local
+_dev

@@ -7,4 +7,3 @@ dependencies:
 - geos
 - pip:
   - earthkit-maps
-
