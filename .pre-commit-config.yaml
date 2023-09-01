@@ -24,7 +24,7 @@ repos:
   - id: blackdoc
     additional_dependencies: [black==23.3.0]
 - repo: https://github.com/PyCQA/flake8
-  rev: 4.0.1
+  rev: 6.1.0
   hooks:
   - id: flake8
 - repo: https://github.com/executablebooks/mdformat
