@@ -17,7 +17,7 @@ except ImportError:  # pragma: no cover
     # Local copy or not installed with setuptools
     __version__ = "999"
 
-import earthkit as ek
+import earthkit
 
-for component in pkgutil.iter_modules(ek.__path__, ek.__name__ + "."):
+for component in pkgutil.iter_modules(earthkit.__path__, earthkit.__name__ + "."):
     __import__(component.name)
