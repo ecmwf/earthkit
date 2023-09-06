@@ -7,6 +7,7 @@
 # nor does it submit to any jurisdiction.
 #
 
+import pkgutil
 
 try:
     # NOTE: the `version.py` file must not be present in the git repository
@@ -16,14 +17,7 @@ except ImportError:  # pragma: no cover
     # Local copy or not installed with setuptools
     __version__ = "999"
 
-import earthkit.data as data
-import earthkit.maps as maps
+import earthkit as ek
 
-# import earthkit.regrid as regrid
-
-__all__ = [
-    "data",
-    "maps",
-    # "regrid",
-    "__version__",
-]
+for component in pkgutil.iter_modules(ek.__path__, ek.__name__ + "."):
+    __import__(component.name)
