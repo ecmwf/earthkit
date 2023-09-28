@@ -36,4 +36,4 @@ def test_earthkit_data_version_2():
 def test_earthkit_maps_version():
     import earthkit.maps  # noqa
 
-    # assert VERSION_RX.match(earthkit.maps.__version__) is not None
+    assert VERSION_RX.match(earthkit.maps.__version__) is not None
