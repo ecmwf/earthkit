@@ -10,3 +10,4 @@ dependencies:
 - geos
 - pip:
   - earthkit-maps
+  - earthkit-meteo>=0.0.1
