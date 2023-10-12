@@ -18,12 +18,13 @@ except ImportError:  # pragma: no cover
 
 import earthkit.data as data
 import earthkit.maps as maps
+import earthkit.meteo as meteo
 
-# import earthkit.regrid as regrid
 
 __all__ = [
     "data",
     "maps",
+    "meteo"
     # "regrid",
     "__version__",
 ]
