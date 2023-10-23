@@ -1,6 +1,5 @@
 # earthkit
 
-
 <img src="docs/_static/earthkit.png" width="120">
 
 [![PyPI version fury.io](https://badge.fury.io/py/earthkit.svg)](https://pypi.python.org/pypi/earthkit/)
