@@ -5,11 +5,6 @@ Welcome to earthkit's documentation
 
     This project is **BETA** and will be **Experimental** for the foreseeable future. Interfaces and functionality are likely to change, and the project itself may be scrapped. **DO NOT** use this software in any project/software that is operational.
 
-.. warning::
-
-    This documentation is still work in progress and can only be regarded as a **DRAFT**.
-
-
 **earthkit** is a new open-source Python project led by ECMWF, providing powerful tools for speeding up weather and climate science workflows by simplifying data access, processing, analysis, visualisation and much more.
 
 **earthkit** offers **multiple interoperable** :ref:`software components <components>` built on top of well-established open-source Python libraries like numpy, pandas and matplotlib. earthkit also integrates and leverages the robust and operations-ready software stack that is familiar to ECMWF production systems (e.g. :xref:`eccodes`, FDB, etc).
