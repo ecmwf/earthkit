@@ -15,7 +15,7 @@ repos:
   hooks:
   - id: isort
 - repo: https://github.com/psf/black
-  rev: 23.3.0
+  rev: 23.9.1
   hooks:
   - id: black
 - repo: https://github.com/keewis/blackdoc
@@ -33,13 +33,12 @@ repos:
   - id: mdformat
     exclude: cruft-update-template.md
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
-  rev: v2.4.0
+  rev: v2.11.0
   hooks:
   - id: pretty-format-yaml
     args: [--autofix, --preserve-quotes]
   - id: pretty-format-toml
     args: [--autofix]
-    additional_dependencies: [toml-sort<0.22.0]
 - repo: https://github.com/PyCQA/pydocstyle.git
   rev: 6.1.1
   hooks:
