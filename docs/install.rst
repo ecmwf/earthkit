@@ -14,13 +14,13 @@ Install **earthkit** with python3 (>= 3.8) and ``pip`` as follows:
 
     python3 -m pip install earthkit
 
-Alternatively, install via ``conda`` with:
+.. Alternatively, install via ``conda`` with:
 
-.. code-block:: bash
+.. .. code-block:: bash
 
-    conda install earthkit -c conda-forge
+..     conda install earthkit -c conda-forge
 
-This will bring in some necessary binary dependencies for you.
+.. This will bring in some necessary binary dependencies for you.
 
 Installing the binary dependencies
 --------------------------------------

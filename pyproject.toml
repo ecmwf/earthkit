@@ -8,8 +8,8 @@ branch = true
 profile = "black"
 
 [tool.pydocstyle]
-convention = "numpy"
 add_ignore = ["D1", "D200", "D205", "D400", "D401"]
+convention = "numpy"
 
 [tool.setuptools_scm]
 write_to = "earthkit/version.py"
