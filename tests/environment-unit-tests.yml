@@ -11,4 +11,4 @@ dependencies:
 - pip:
   - earthkit-maps>=0.0.13
   - earthkit-meteo>=0.0.1
-  - earthkit-plots>=0.0.3
+  - earthkit-plots>=0.0.4
