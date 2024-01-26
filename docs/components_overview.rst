@@ -23,3 +23,6 @@ This is the summary of the available ``earthkit`` components.
     * - :xref:`earthkit-meteo`
       - Meteorological computations.
       -
+    * - :xref:`earthkit-plots`
+      - Graph chart visualisation
+      -
