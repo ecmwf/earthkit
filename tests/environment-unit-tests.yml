@@ -3,11 +3,12 @@ channels:
 - conda-forge
 - nodefaults
 dependencies:
-- earthkit-data
 - pip
 - pytest
 - pytest-cov
 - geos
 - pip:
-  - earthkit-maps
+  - earthkit-data>=0.5.1
+  - earthkit-maps>=0.0.13
   - earthkit-meteo>=0.0.1
+  - earthkit-plots>=0.0.6

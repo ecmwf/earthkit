@@ -73,6 +73,10 @@ xref_links = {
         "earthkit-meteo",
         "https://earthkit-meteo.readthedocs.io",
     ),
+    "earthkit-plots": (
+        "earthkit-plots",
+        "https://pypi.org/project/earthkit-plots",
+    ),
     "eccodes": (
         "ecCodes",
         "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
