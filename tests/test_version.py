@@ -33,10 +33,16 @@ def test_earthkit_data_version_2():
     assert VERSION_RX.match(data.__version__) is not None
 
 
-def test_earthkit_maps_version():
+def test_earthkit_maps_version_1():
     import earthkit.maps  # noqa
 
     assert VERSION_RX.match(earthkit.maps.__version__) is not None
+
+
+def test_earthkit_maps_version_2():
+    from earthkit import maps  # noqa
+
+    assert VERSION_RX.match(maps.__version__) is not None
 
 
 def test_earthkit_meteo_version_1():
@@ -49,3 +55,15 @@ def test_earthkit_meteo_version_2():
     from earthkit import meteo  # noqa
 
     assert VERSION_RX.match(meteo.__version__) is not None
+
+
+def test_earthkit_plots_version_1():
+    import earthkit.plots  # noqa
+
+    assert VERSION_RX.match(earthkit.plots.__version__) is not None
+
+
+def test_earthkit_plots_version_2():
+    from earthkit import plots  # noqa
+
+    assert VERSION_RX.match(plots.__version__) is not None

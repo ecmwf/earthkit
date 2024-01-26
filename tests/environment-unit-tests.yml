@@ -9,5 +9,6 @@ dependencies:
 - pytest-cov
 - geos
 - pip:
-  - earthkit-maps
+  - earthkit-maps>=0.0.13
   - earthkit-meteo>=0.0.1
+  - earthkit-plots>=0.0.3
