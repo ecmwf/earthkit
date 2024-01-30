@@ -11,7 +11,7 @@ Welcome to earthkit's documentation
 
 The interface of :ref:`earthkit components <components>` is designed to be high-level in order to provide common tools to support activities across ECMWF and beyond. The design of the components also takes **scalability** into account, so researchers can enjoy efficiency whilst providing easier transfer to operations.
 
-**earthkit** is still under development, but 4 components, :xref:`earthkit-data`, :xref:`earthkit-maps` , :xref:`earthkit-meteo` and :xref:`earthkit-plots` and are now available in beta through PyPI and their GitHub repositories.
+**earthkit** is still under development, but 4 components, :xref:`earthkit-data`, :xref:`earthkit-maps` , :xref:`earthkit-meteo` and :xref:`earthkit-plots` are now available in beta through PyPI and their GitHub repositories.
 
 .. .. toctree::
 ..    :maxdepth: 1
@@ -29,7 +29,7 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
     earthkit-data <https://earthkit-data.readthedocs.io>
     earthkit-maps <https://earthkit-maps.readthedocs.io>
     earthkit-meteo <https://earthkit-meteo.readthedocs.io>
-    earthkit-plots <https://earthkit-plots.readthedocs.io>
+    earthkit-plots <https://pypi.org/project/earthkit-plots>
 
 .. toctree::
    :maxdepth: 1
