@@ -77,6 +77,10 @@ xref_links = {
         "earthkit-plots",
         "https://pypi.org/project/earthkit-plots",
     ),
+    "earthkit-regrid": (
+        "earthkit-regrid",
+        "https://earthkit-regrid.readthedocs.io",
+    ),
     "eccodes": (
         "ecCodes",
         "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
