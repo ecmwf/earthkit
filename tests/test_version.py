@@ -67,3 +67,15 @@ def test_earthkit_plots_version_2():
     from earthkit import plots  # noqa
 
     assert VERSION_RX.match(plots.__version__) is not None
+
+
+def test_earthkit_regrid_version_1():
+    import earthkit.regrid  # noqa
+
+    assert VERSION_RX.match(earthkit.regrid.__version__) is not None
+
+
+def test_earthkit_regrid_version_2():
+    from earthkit import regrid  # noqa
+
+    assert VERSION_RX.match(regrid.__version__) is not None
