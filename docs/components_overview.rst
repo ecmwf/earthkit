@@ -24,5 +24,8 @@ This is the summary of the available ``earthkit`` components.
       - Meteorological computations.
       -
     * - :xref:`earthkit-plots`
-      - Graph chart visualisation
+      - Graph chart visualisation.
+      -
+    * - :xref:`earthkit-regrid`
+      - Regridding of geospatial data.
       -
