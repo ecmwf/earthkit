@@ -27,6 +27,7 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
 
     components_overview
     earthkit-data <https://earthkit-data.readthedocs.io>
+    earthkit-geo <https://earthkit-geo.readthedocs.io>
     earthkit-maps <https://earthkit-maps.readthedocs.io>
     earthkit-meteo <https://earthkit-meteo.readthedocs.io>
     earthkit-plots <https://pypi.org/project/earthkit-plots>
