@@ -65,6 +65,10 @@ xref_links = {
         "earthkit-data",
         "https://earthkit-data.readthedocs.io",
     ),
+    "earthkit-geo": (
+        "earthkit-geo",
+        "https://earthkit-geo.readthedocs.io",
+    ),
     "earthkit-maps": (
         "earthkit-maps",
         "https://earthkit-maps.readthedocs.io",
