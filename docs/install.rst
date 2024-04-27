@@ -25,6 +25,6 @@ Install **earthkit** with python3 (>= 3.8) and ``pip`` as follows:
 Installing the binary dependencies
 --------------------------------------
 
-This is the list of components with have binary dependencies. Please click on the links to see the installation instructions.
+This is the list of components with binary dependencies. Please click on the links to see the installation instructions.
 
 -  `eartkit-data <https://earthkit-data.readthedocs.io/en/latest/install.html#installing-the-binary-dependencies>`_
