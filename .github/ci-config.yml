@@ -1,0 +1,9 @@
+dependencies: |
+  ecmwf/ecbuild
+  MathisRosenhauer/libaec@master
+  ecmwf/eccodes
+  ecmwf/eckit
+  ecmwf/odc
+dependency_branch: develop
+parallelism_factor: 8
+self_build: false # Only for python packages
