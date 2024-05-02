@@ -1,0 +1,145 @@
+name: legacy-ci
+
+on:
+  push:
+    branches:
+    - main
+    - develop
+    tags:
+    - "*"
+  pull_request:
+    branches:
+    - main
+    - develop
+  pull_request_target:
+    types: [labeled]
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash -l {0}
+
+jobs:
+  pre-commit:
+    if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.ref }}
+    - uses: actions/setup-python@v4
+      with:
+        python-version: 3.x
+    - uses: pre-commit/action@v3.0.0
+
+  unit-tests:
+    name: unit-tests (3.10)
+    if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.ref }}
+    - name: Install Conda environment with Micromamba
+      uses: mamba-org/provision-with-micromamba@v14
+      with:
+        environment-file: tests/environment-unit-tests.yml
+        environment-name: DEVELOP
+        channels: conda-forge
+        cache-env: true
+        extra-specs: |
+          python=3.10
+    - name: Install package
+      run: |
+        python -m pip install . --no-deps
+    - name: Run tests
+      run: |
+        make unit-tests
+
+  documentation:
+    if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.ref }}
+    - name: Install Conda environment with Micromamba
+      uses: mamba-org/provision-with-micromamba@v12
+      with:
+        environment-file: tests/environment-docs-tests.yml
+        environment-name: DEVELOP
+        channels: conda-forge
+        cache-env: true
+        cache-env-key: ubuntu-latest-3.10
+        extra-specs: |
+          python=3.10
+    - name: Install package
+      run: |
+        python -m pip install --no-deps .
+    - name: Build documentation
+      run: |
+        make docs-build
+
+  # integration-tests:
+  #   needs: [unit-tests]
+  #   if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
+  #   runs-on: ubuntu-latest
+  #   defaults:
+  #     run:
+  #       shell: bash -l {0}
+
+  #   strategy:
+  #     matrix:
+  #       include:
+  #       - python-version: "3.10"
+  #             # extra: -minver  # This will need to be uncommented and environment-minver.yml updated if we want to publish on conda
+
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #     with:
+  #       ref: ${{ github.event.pull_request.head.sha || github.ref }}
+  #   - name: Install Conda environment with Micromamba
+  #     uses: mamba-org/provision-with-micromamba@v12
+  #     with:
+  #       environment-file: tests/environment-unit-tests${{ matrix.extra }}.yml
+  #       environment-name: DEVELOP${{ matrix.extra }}
+  #       channels: conda-forge
+  #       cache-env: true
+  #       cache-env-key: ubuntu-latest-${{ matrix.python-version }}${{ matrix.extra }}.
+  #       extra-specs: |
+  #         python=${{matrix.python-version }}
+  #   - name: Install package
+  #     run: |
+  #       python -m pip install --no-deps .
+  #   - name: Run tests
+  #     run: |
+  #       make unit-tests
+
+  # distribution:
+  #   needs: [integration-tests, documentation]
+  #   if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
+  #   runs-on: ubuntu-latest
+
+  #   steps:
+  #   - uses: actions/checkout@v3
+  #     with:
+  #       ref: ${{ github.event.pull_request.head.sha || github.ref }}
+  #   - name: Build distributions
+  #     run: |
+  #       $CONDA/bin/python -m pip install build
+  #       $CONDA/bin/python -m build
+  #   - name: Publish a Python distribution to PyPI
+  #     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
+  #     uses: pypa/gh-action-pypi-publish@release/v1
+  #     with:
+  #       user: __token__
+  #       password: ${{ secrets.PYPI_API_TOKEN }}
