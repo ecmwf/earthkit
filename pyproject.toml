@@ -24,7 +24,7 @@ dependencies = [
   "earthkit-maps>=0.0.18",
   "earthkit-meteo>=0.1.0",
   "earthkit-plots>=0.0.6",
-  "earthkit-regrid>=0.3.0"
+  "earthkit-regrid>=0.3.1"
 ]
 description = "A format-agnostic Python interface for geospatial data"
 dynamic = ["version"]
