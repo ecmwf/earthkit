@@ -19,6 +19,7 @@ classifiers = [
   "Operating System :: OS Independent"
 ]
 dependencies = [
+  "numpy<2.0.0",
   "earthkit-data[all]>=0.7.0",
   "earthkit-geo>=0.1.0",
   "earthkit-maps>=0.0.18",
