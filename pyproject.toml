@@ -20,11 +20,11 @@ classifiers = [
 ]
 dependencies = [
   "numpy<2.0.0",
-  "earthkit-data[all]>=0.7.0",
-  "earthkit-geo>=0.1.0",
-  "earthkit-maps>=0.0.18",
+  "earthkit-data[all]>=0.8.1",
+  "earthkit-geo>=0.2.0",
+  "earthkit-maps>=0.0.19",
   "earthkit-meteo>=0.1.0",
-  "earthkit-plots>=0.0.6",
+  "earthkit-plots>=0.1.2",
   "earthkit-regrid>=0.3.1"
 ]
 description = "A format-agnostic Python interface for geospatial data"
