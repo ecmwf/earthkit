@@ -1,8 +1,50 @@
 [build-system]
-requires = ["setuptools>=45", "setuptools_scm[toml]>=6.2"]
+requires = ["setuptools>=61", "setuptools-scm>=8.0"]
+
+[project]
+authors = [
+  {name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int"}
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "numpy<2.0.0",
+  "earthkit-data[all]>=0.9.0",
+  "earthkit-geo>=0.2.0",
+  "earthkit-maps>=0.0.19",
+  "earthkit-meteo>=0.1.0",
+  "earthkit-plots>=0.1.2",
+  "earthkit-regrid>=0.3.1"
+]
+description = "A format-agnostic Python interface for geospatial data"
+dynamic = ["version"]
+license = {text = "Apache License Version 2.0"}
+name = "earthkit"
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Documentation = "https://earthkit.readthedocs.io/"
+Homepage = "https://github.com/ecmwf/earthkit/"
+Issues = "https://github.com/ecmwf/earthkit.issues"
+Repository = "https://github.com/ecmwf/earthkit/"
 
 [tool.coverage.run]
-branch = true
+branch = "true"
 
 [tool.isort]
 profile = "black"
@@ -11,9 +53,9 @@ profile = "black"
 add_ignore = ["D1", "D200", "D205", "D400", "D401"]
 convention = "numpy"
 
+[tool.setuptools.packages.find]
+include = ["earthkit", "earthkit.*"]
+where = ["src/", "./"]
+
 [tool.setuptools_scm]
-write_to = "earthkit/version.py"
-write_to_template = '''
-# Do not change! Do not track in version control!
-__version__ = "{version}"
-'''
+version_file = "src/earthkit/_version.py"

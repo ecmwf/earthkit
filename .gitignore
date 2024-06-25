@@ -1,5 +1,6 @@
 # setuptools-scm
-earthkit/version.py
+version.py
+_version.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
