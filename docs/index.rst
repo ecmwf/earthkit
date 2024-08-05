@@ -32,6 +32,7 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
     earthkit-meteo <https://earthkit-meteo.readthedocs.io>
     earthkit-plots <https://pypi.org/project/earthkit-plots>
     earthkit-regrid <https://earthkit-regrid.readthedocs.io>
+    earthkit-transforms <https://earthkit-transforms.readthedocs.io>
 
 .. toctree::
    :maxdepth: 1

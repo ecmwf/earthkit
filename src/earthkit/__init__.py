@@ -22,6 +22,7 @@ import earthkit.maps as maps
 import earthkit.meteo as meteo
 import earthkit.plots as plots
 import earthkit.regrid as regrid
+import earthkit.transforms as transforms
 
 __all__ = [
     "data",
@@ -30,5 +31,6 @@ __all__ = [
     "meteo",
     "plots",
     "regrid",
+    "transforms",
     "__version__",
 ]
