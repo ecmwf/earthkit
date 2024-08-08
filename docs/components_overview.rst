@@ -32,3 +32,6 @@ This is the summary of the available ``earthkit`` components.
     * - :xref:`earthkit-regrid`
       - Regridding of geospatial data.
       -
+    * - :xref:`earthkit-transforms`
+      - Aggregation and transformation of geospatial data.
+      -

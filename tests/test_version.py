@@ -91,3 +91,15 @@ def test_earthkit_regrid_version_2():
     from earthkit import regrid  # noqa
 
     assert VERSION_RX.match(regrid.__version__) is not None
+
+
+def test_earthkit_transforms_version_1():
+    import earthkit.transforms  # noqa
+
+    assert VERSION_RX.match(earthkit.transforms.__version__) is not None
+
+
+def test_earthkit_transforms_version_2():
+    from earthkit import transforms  # noqa
+
+    assert VERSION_RX.match(transforms.__version__) is not None
