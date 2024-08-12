@@ -85,6 +85,10 @@ xref_links = {
         "earthkit-regrid",
         "https://earthkit-regrid.readthedocs.io",
     ),
+    "earthkit-transforms": (
+        "earthkit-transforms",
+        "https://earthkit-transforms.readthedocs.io",
+    ),
     "eccodes": (
         "ecCodes",
         "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
