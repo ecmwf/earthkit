@@ -4,7 +4,7 @@ channels:
 - nodefaults
 dependencies:
 - numpy<2.0.0
-- earthkit-data>=0.9.0
+- earthkit-data>=0.9.4
 - geos
 - pip:
   - earthkit-maps>=0.0.19
