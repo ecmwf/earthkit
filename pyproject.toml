@@ -20,7 +20,7 @@ classifiers = [
 ]
 dependencies = [
   "numpy<2.0.0",
-  "earthkit-data[all]>=0.9.0",
+  "earthkit-data[all]>=0.9.4",
   "earthkit-geo>=0.2.0",
   "earthkit-maps>=0.0.19",
   "earthkit-meteo>=0.1.0",
