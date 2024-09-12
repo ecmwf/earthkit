@@ -19,15 +19,11 @@ This is the summary of the available ``earthkit`` components.
     * - :xref:`earthkit-geo`
       - Geospatial computations
       -
-    * - :xref:`earthkit-maps`
-      - Geospatial visualisation tools and templates.
-      - .. image:: https://raw.githubusercontent.com/ecmwf/earthkit-maps/develop/docs/_static/earthkit-maps.png
-          :width: 120px
     * - :xref:`earthkit-meteo`
       - Meteorological computations.
       -
     * - :xref:`earthkit-plots`
-      - Graph chart visualisation.
+      - Visualisation tools and templates
       -
     * - :xref:`earthkit-regrid`
       - Regridding of geospatial data.
