@@ -69,17 +69,13 @@ xref_links = {
         "earthkit-geo",
         "https://earthkit-geo.readthedocs.io",
     ),
-    "earthkit-maps": (
-        "earthkit-maps",
-        "https://earthkit-maps.readthedocs.io",
-    ),
     "earthkit-meteo": (
         "earthkit-meteo",
         "https://earthkit-meteo.readthedocs.io",
     ),
     "earthkit-plots": (
         "earthkit-plots",
-        "https://pypi.org/project/earthkit-plots",
+        "https://earthkit-plots.readthedocs.io",
     ),
     "earthkit-regrid": (
         "earthkit-regrid",

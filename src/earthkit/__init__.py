@@ -18,7 +18,6 @@ except ImportError:  # pragma: no cover
 
 import earthkit.data as data
 import earthkit.geo as geo
-import earthkit.maps as maps
 import earthkit.meteo as meteo
 import earthkit.plots as plots
 import earthkit.regrid as regrid
@@ -27,7 +26,6 @@ import earthkit.transforms as transforms
 __all__ = [
     "data",
     "geo",
-    "maps",
     "meteo",
     "plots",
     "regrid",
