@@ -1,60 +1,58 @@
 [build-system]
-requires = ["setuptools>=61", "setuptools-scm>=8.0"]
+requires = [ "setuptools>=61", "setuptools-scm>=8" ]
 
 [project]
+name = "earthkit"
+description = "A format-agnostic Python interface for geospatial data"
+readme = "README.md"
+license = { text = "Apache License Version 2.0" }
 authors = [
-  {name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int"}
+  { name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int" },
 ]
+requires-python = ">=3.8"
+
 classifiers = [
   "Development Status :: 2 - Pre-Alpha",
   "Intended Audience :: Developers",
   "License :: OSI Approved :: Apache Software License",
-  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
-  "Operating System :: OS Independent"
 ]
+dynamic = [ "version" ]
 dependencies = [
   "earthkit-data[all]>=0.10.2",
-  "earthkit-geo>=0.2.0",
+  "earthkit-geo>=0.2",
   "earthkit-meteo>=0.1.1",
-  "earthkit-plots>=0.2.0",
+  "earthkit-plots>=0.2",
   "earthkit-regrid>=0.3.4",
-  "earthkit-transforms>=0.3.3"
+  "earthkit-transforms>=0.3.3",
 ]
-description = "A format-agnostic Python interface for geospatial data"
-dynamic = ["version"]
-license = {text = "Apache License Version 2.0"}
-name = "earthkit"
-readme = "README.md"
-requires-python = ">= 3.8"
+optional-dependencies.test = [ "pytest" ]
+urls.Documentation = "https://earthkit.readthedocs.io/"
+urls.Homepage = "https://github.com/ecmwf/earthkit/"
+urls.Issues = "https://github.com/ecmwf/earthkit.issues"
+urls.Repository = "https://github.com/ecmwf/earthkit/"
 
-[project.optional-dependencies]
-test = ["pytest"]
+[tool.setuptools.packages.find]
+include = [ "earthkit", "earthkit.*" ]
+where = [ "src/", "./" ]
 
-[project.urls]
-Documentation = "https://earthkit.readthedocs.io/"
-Homepage = "https://github.com/ecmwf/earthkit/"
-Issues = "https://github.com/ecmwf/earthkit.issues"
-Repository = "https://github.com/ecmwf/earthkit/"
-
-[tool.coverage.run]
-branch = "true"
+[tool.setuptools_scm]
+version_file = "src/earthkit/_version.py"
 
 [tool.isort]
 profile = "black"
 
+[tool.coverage.run]
+branch = "true"
+
 [tool.pydocstyle]
-add_ignore = ["D1", "D200", "D205", "D400", "D401"]
+add_ignore = [ "D1", "D200", "D205", "D400", "D401" ]
 convention = "numpy"
-
-[tool.setuptools.packages.find]
-include = ["earthkit", "earthkit.*"]
-where = ["src/", "./"]
-
-[tool.setuptools_scm]
-version_file = "src/earthkit/_version.py"

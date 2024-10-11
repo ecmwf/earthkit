@@ -1,0 +1,12 @@
+name: Code Quality checks for PRs
+
+on:
+  push:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  quality:
+    uses: ecmwf-actions/reusable-workflows/.github/workflows/qa-precommit-run.yml@v2
+    with:
+      skip-hooks: "no-commit-to-branch"
