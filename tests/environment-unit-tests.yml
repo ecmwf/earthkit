@@ -1,16 +1,16 @@
 name: earthkit
 channels:
-- conda-forge
-- nodefaults
+  - conda-forge
+  - nodefaults
 dependencies:
-- pip
-- pytest
-- pytest-cov
-- geos
-- pip:
-  - earthkit-data[all]>=0.10.2
-  - earthkit-geo>=0.2.0
-  - earthkit-meteo>=0.1.1
-  - earthkit-plots>=0.2.0
-  - earthkit-regrid>=0.3.4
-  - earthkit-transforms>=0.3.3
+  - pip
+  - pytest
+  - pytest-cov
+  - geos
+  - pip:
+      - earthkit-data[all]>=0.10.9
+      - earthkit-geo>=0.2.0
+      - earthkit-meteo>=0.1.1
+      - earthkit-plots>=0.2.4
+      - earthkit-regrid>=0.3.4
+      - earthkit-transforms>=0.3.4

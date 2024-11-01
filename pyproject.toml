@@ -1,5 +1,5 @@
 [build-system]
-requires = [ "setuptools>=61", "setuptools-scm>=8" ]
+requires = ["setuptools>=61", "setuptools-scm>=8"]
 
 [project]
 name = "earthkit"
@@ -25,24 +25,24 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dynamic = [ "version" ]
+dynamic = ["version"]
 dependencies = [
-  "earthkit-data[all]>=0.10.2",
+  "earthkit-data[all]>=0.10.9",
   "earthkit-geo>=0.2",
   "earthkit-meteo>=0.1.1",
-  "earthkit-plots>=0.2",
+  "earthkit-plots>=0.2.4",
   "earthkit-regrid>=0.3.4",
-  "earthkit-transforms>=0.3.3",
+  "earthkit-transforms>=0.3.4",
 ]
-optional-dependencies.test = [ "pytest" ]
+optional-dependencies.test = ["pytest"]
 urls.Documentation = "https://earthkit.readthedocs.io/"
 urls.Homepage = "https://github.com/ecmwf/earthkit/"
 urls.Issues = "https://github.com/ecmwf/earthkit.issues"
 urls.Repository = "https://github.com/ecmwf/earthkit/"
 
 [tool.setuptools.packages.find]
-include = [ "earthkit", "earthkit.*" ]
-where = [ "src/", "./" ]
+include = ["earthkit", "earthkit.*"]
+where = ["src/", "./"]
 
 [tool.setuptools_scm]
 version_file = "src/earthkit/_version.py"
@@ -54,5 +54,5 @@ profile = "black"
 branch = "true"
 
 [tool.pydocstyle]
-add_ignore = [ "D1", "D200", "D205", "D400", "D401" ]
+add_ignore = ["D1", "D200", "D205", "D400", "D401"]
 convention = "numpy"
