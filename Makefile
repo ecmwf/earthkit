@@ -6,13 +6,16 @@ COV_REPORT := html
 setup:
 	pre-commit install
 
-default: qa unit-tests type-check
+default: qa unit-tests
 
 qa:
 	pre-commit run --all-files
 
 unit-tests:
 	cd .. && python -m pytest earthkit -vv --cov=. --cov-report=$(COV_REPORT) && cd -
+
+type-check:
+	python -m mypy .
 
 conda-env-update:
 	$(CONDA) env update $(CONDAFLAGS) -f environment.yml

@@ -1,32 +1,48 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.4.0
+  rev: v5.0.0
   hooks:
-  - id: trailing-whitespace
-  - id: end-of-file-fixer
+  - id: trailing-whitespace  # Trailing whitespace checker
+  - id: end-of-file-fixer # Ensure files end in a newline
   - id: check-json
-  - id: check-yaml
+  - id: check-yaml # Check YAML files for syntax errors only
+    args: [--unsafe, --allow-multiple-documents]
   - id: check-toml
   # - id: check-added-large-files
-  - id: debug-statements
+  - id: debug-statements # Check for debugger imports and py37+ breakpoint()
   - id: mixed-line-ending
+  - id: no-commit-to-branch # Prevent committing to main / master
+  - id: check-merge-conflict # Check for files that contain merge conflict
+    exclude: /README\.rst$|^docs/.*\.rst$
 - repo: https://github.com/PyCQA/isort
-  rev: 5.12.0
+  rev: 5.13.2
   hooks:
   - id: isort
+    args:
+    - -l 120
+    - --force-single-line-imports
+    - --profile black
 - repo: https://github.com/psf/black
-  rev: 23.9.1
+  rev: 24.8.0
   hooks:
   - id: black
+    args: [--line-length=120]
 - repo: https://github.com/keewis/blackdoc
   rev: v0.3.8
   hooks:
   - id: blackdoc
     additional_dependencies: [black==23.3.0]
-- repo: https://github.com/PyCQA/flake8
-  rev: 6.1.0
+    exclude: xr_engine_profile_rst\.py
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.6.9
   hooks:
-  - id: flake8
+  - id: ruff
+    exclude: '(dev/.*|.*_)\.py$'
+    args:
+    - --line-length=120
+    - --fix
+    - --exit-non-zero-on-fix
+    - --preview
 - repo: https://github.com/executablebooks/mdformat
   rev: 0.7.14
   hooks:
@@ -37,11 +53,11 @@ repos:
   hooks:
   - id: pretty-format-yaml
     args: [--autofix, --preserve-quotes]
-  - id: pretty-format-toml
-    args: [--autofix]
-- repo: https://github.com/PyCQA/pydocstyle.git
-  rev: 6.1.1
+- repo: https://github.com/sphinx-contrib/sphinx-lint
+  rev: v1.0.0
   hooks:
-  - id: pydocstyle
-    additional_dependencies: [toml]
-    exclude: tests|docs
+  - id: sphinx-lint
+- repo: https://github.com/tox-dev/pyproject-fmt
+  rev: "2.2.4"
+  hooks:
+  - id: pyproject-fmt

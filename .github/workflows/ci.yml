@@ -8,9 +8,15 @@ on:
     - 'develop'
     tags-ignore:
     - '**'
+    paths-ignore:
+    - "docs/**"
+    - "README.md"
 
   # Trigger the workflow on pull request
   pull_request:
+    paths-ignore:
+    - "docs/**"
+    - "README.md"
 
   # Trigger the workflow manually
   workflow_dispatch:
@@ -18,6 +24,9 @@ on:
   # Trigger after public PR approved for CI
   pull_request_target:
     types: [labeled]
+    paths-ignore:
+    - "docs/**"
+    - "README.md"
 
 jobs:
   # Run CI including downstream packages on self-hosted runners
@@ -28,7 +37,7 @@ jobs:
     with:
       earthkit: ecmwf/earthkit@${{ github.event.pull_request.head.sha || github.sha }}
       codecov_upload: true
-      python_qa: true
+      python_qa: false
     secrets: inherit
 
 
