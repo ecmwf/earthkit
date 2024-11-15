@@ -14,4 +14,3 @@ Here is a list of example notebooks to illustrate how to use earthkit.
     polytope_polygon_logo.ipynb
     polytope_timeseries.ipynb
     polytope_vertical_profile.ipynb
-    

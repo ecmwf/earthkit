@@ -1,13 +1,13 @@
 name: earthkit
 channels:
-  - conda-forge
-  - nodefaults
+- conda-forge
+- nodefaults
 dependencies:
-  - earthkit-data>=0.10.11
-  - geos
-  - pip:
-      - earthkit-geo>=0.2.0
-      - earthkit-meteo>=0.1.1
-      - earthkit-plots>=0.2.5
-      - earthkit-regrid>=0.3.4
-      - earthkit-transforms>=0.3.4
+- earthkit-data>=0.10.11
+- geos
+- pip:
+  - earthkit-geo>=0.2.0
+  - earthkit-meteo>=0.1.1
+  - earthkit-plots>=0.2.5
+  - earthkit-regrid>=0.3.4
+  - earthkit-transforms>=0.3.4
