@@ -13,12 +13,11 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
 
 **earthkit** is still under development but some components are already available in beta through PyPI and their GitHub repositories.
 
-.. .. toctree::
-..    :maxdepth: 1
-..    :caption: Examples
-..    :titlesonly:
+.. toctree::
+   :maxdepth: 1
+   :caption: Examples
 
-..    examples
+   examples/index
 
 .. toctree::
     :maxdepth: 1
