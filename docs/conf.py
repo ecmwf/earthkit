@@ -81,6 +81,10 @@ xref_links = {
         "earthkit-regrid",
         "https://earthkit-regrid.readthedocs.io",
     ),
+    "earthkit-time": (
+        "earthkit-time",
+        "https://earthkit-time.readthedocs.io",
+    ),
     "earthkit-transforms": (
         "earthkit-transforms",
         "https://earthkit-transforms.readthedocs.io",
