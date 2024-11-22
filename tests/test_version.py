@@ -10,6 +10,9 @@
 #
 
 import re
+from importlib.metadata import version
+
+import pytest
 
 VERSION_RX = re.compile(r"""\d+\.\d+\.*""")
 
@@ -79,6 +82,19 @@ def test_earthkit_regrid_version_2():
     from earthkit import regrid  # noqa
 
     assert VERSION_RX.match(regrid.__version__) is not None
+
+
+def test_earthkit_time_version_1():
+    import earthkit.time  # noqa
+
+    assert VERSION_RX.match(version("earthkit.time")) is not None
+
+
+@pytest.mark.xfail(reason="version not available")
+def test_earthkit_time_version_2():
+    from earthkit import time  # noqa
+
+    assert VERSION_RX.match(time.__version__) is not None
 
 
 def test_earthkit_transforms_version_1():

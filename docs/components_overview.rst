@@ -28,6 +28,9 @@ This is the summary of the available ``earthkit`` components.
     * - :xref:`earthkit-regrid`
       - Regridding of geospatial data.
       -
+    * - :xref:`earthkit-time`
+      - Manipulation of dates and time for weather forecasting.
+      -
     * - :xref:`earthkit-transforms`
       - Aggregation and transformation of geospatial data.
       -

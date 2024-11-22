@@ -30,6 +30,7 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
     earthkit-meteo <https://earthkit-meteo.readthedocs.io>
     earthkit-plots <https://earthkit-plots.readthedocs.io>
     earthkit-regrid <https://earthkit-regrid.readthedocs.io>
+    earthkit-time <https://earthkit-time.readthedocs.io>
     earthkit-transforms <https://earthkit-transforms.readthedocs.io>
 
 .. toctree::
