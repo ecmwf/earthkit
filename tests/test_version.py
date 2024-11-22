@@ -37,7 +37,8 @@ def test_earthkit_data_version_2():
 
 
 def test_earthkit_data_import():
-    pass
+    import earthkit.data  # noqa
+    from earthkit.data import from_source  # noqa
 
 
 def test_earthkit_data_obj_1():
@@ -65,7 +66,8 @@ def test_earthkit_geo_version_2():
 
 
 def test_earthkit_geo_import():
-    pass
+    import earthkit.geo  # noqa
+    from earthkit.geo import nearest_point_kdtree  # noqa
 
 
 def test_earthkit_geo_obj_1():
@@ -93,7 +95,8 @@ def test_earthkit_meteo_version_2():
 
 
 def test_earthkit_meteo_import():
-    pass
+    import earthkit.meteo  # noqa
+    from earthkit.meteo import thermo  # noqa
 
 
 def test_earthkit_meteo_obj_1():
@@ -121,7 +124,8 @@ def test_earthkit_plots_version_2():
 
 
 def test_earthkit_plots_import():
-    pass
+    import earthkit.plots  # noqa
+    from earthkit.plots import quickmap  # noqa
 
 
 def test_earthkit_plots_obj_1():
@@ -149,7 +153,8 @@ def test_earthkit_regrid_version_2():
 
 
 def test_earthkit_regrid_import():
-    pass
+    import earthkit.regrid  # noqa
+    from earthkit.regrid import interpolate  # noqa
 
 
 def test_earthkit_regrid_obj_1():
@@ -178,7 +183,8 @@ def test_earthkit_time_version_2():
 
 
 def test_earthkit_time_import():
-    pass
+    import earthkit.time  # noqa
+    from earthkit.time import DailySequence  # noqa
 
 
 def test_earthkit_time_obj_1():
@@ -208,7 +214,8 @@ def test_earthkit_transforms_version_2():
 
 
 def test_earthkit_transforms_import():
-    pass
+    import earthkit.transforms  # noqa
+    from earthkit.transforms import aggregate  # noqa
 
 
 def test_earthkit_transforms_obj_1():
