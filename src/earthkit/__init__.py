@@ -21,6 +21,7 @@ import earthkit.geo as geo
 import earthkit.meteo as meteo
 import earthkit.plots as plots
 import earthkit.regrid as regrid
+import earthkit.time as time
 import earthkit.transforms as transforms
 
 __all__ = [
@@ -29,6 +30,7 @@ __all__ = [
     "meteo",
     "plots",
     "regrid",
+    "time",
     "transforms",
     "__version__",
 ]
