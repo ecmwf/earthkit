@@ -3,12 +3,12 @@ channels:
 - conda-forge
 - nodefaults
 dependencies:
-- earthkit-data>=0.12.0
+- earthkit-data>=0.12.1
 - geos
 - pip:
   - earthkit-geo>=0.3.0
   - earthkit-meteo>=0.3.0
   - earthkit-plots>=0.2.8
-  - earthkit-regrid>=0.3.5
-  - earthkit-time>=0.1.6
+  - earthkit-regrid>=0.4.0
+  - earthkit-time>=0.1.7
   - earthkit-transforms>=0.3.4
