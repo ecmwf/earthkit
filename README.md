@@ -1,6 +1,6 @@
 # earthkit
 
-<img src="docs/_static/earthkit.png" width="120">
+<img src="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-light.svg" width="160">
 
 [![PyPI version fury.io](https://badge.fury.io/py/earthkit.svg)](https://pypi.python.org/pypi/earthkit/)
 [![PyPI pyversions](https://img.shields.io/pypi/pyversions/earthkit.svg)](https://pypi.python.org/pypi/earthkit/)
