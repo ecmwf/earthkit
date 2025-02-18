@@ -18,9 +18,10 @@
     font-size: 85%;
 }
 
-.wy-table-responsive table td, .wy-table-responsive table th {
+.wy-table-responsive table td,
+.wy-table-responsive table th {
     white-space: inherit;
-  }
+}
 
 /*
 .wy-table-responsive table td,
@@ -43,6 +44,7 @@
 /*
 Set logo size
 */
-.wy-side-nav-search .wy-dropdown > a img.logo, .wy-side-nav-search > a img.logo {
-    width: 80px;
+.wy-side-nav-search .wy-dropdown>a img.logo,
+.wy-side-nav-search>a img.logo {
+    width: 180px;
 }
