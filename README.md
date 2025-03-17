@@ -31,6 +31,7 @@
 **earthkit** is an open-source project led by ECMWF, providing powerful tools for speeding up weather and climate science workflows by simplifying data access, processing, analysis, visualisation and much more.
 
 # The earthkit ecosystem
+
 | | | |
 |:-------------------------:|:-------------------------:|:-------------------------:|
 | <a href="https://github.com/ecmwf/earthkit-data"><picture><source srcset="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-data-dark.svg" media="(prefers-color-scheme: dark)"><img src="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-data-light.svg"></picture></a> | <a href="https://github.com/ecmwf/earthkit-plots"><picture><source srcset="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-plots-dark.svg" media="(prefers-color-scheme: dark)"><img src="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-plots-light.svg"></picture></a> | <a href="https://github.com/ecmwf/earthkit-meteo"><picture><source srcset="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-meteo-dark.svg" media="(prefers-color-scheme: dark)"><img src="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-meteo-light.svg"></picture></a> |
