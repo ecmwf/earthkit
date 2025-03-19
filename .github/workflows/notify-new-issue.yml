@@ -10,6 +10,6 @@
 #     runs-on: ubuntu-latest
 #     steps:
 #     - name: Notify new issue
-#       uses: ecmwf-actions/notify-teams-issue@v1
+#       uses: ecmwf/notify-teams-issue@v1
 #       with:
 #         incoming_webhook: ${{ secrets.MS_TEAMS_INCOMING_WEBHOOK }}
