@@ -7,6 +7,6 @@ on:
 
 jobs:
   quality:
-    uses: ecmwf-actions/reusable-workflows/.github/workflows/qa-precommit-run.yml@v2
+    uses: ecmwf/reusable-workflows/.github/workflows/qa-precommit-run.yml@v2
     with:
       skip-hooks: "no-commit-to-branch"
