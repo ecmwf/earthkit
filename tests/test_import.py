@@ -43,3 +43,8 @@ def test_earthkit_time_import():
 def test_earthkit_transforms_import():
     import earthkit.transforms  # noqa
     from earthkit.transforms import aggregate  # noqa
+
+
+def test_earthkit_hydro_import():
+    import earthkit.hydro  # noqa
+    from earthkit.hydro import river_network  # noqa
