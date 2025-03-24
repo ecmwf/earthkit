@@ -34,6 +34,18 @@ def test_earthkit_geo_obj_2():
     assert callable(geo.nearest_point_kdtree)
 
 
+def test_earthkit_hydro_obj_1():
+    import earthkit.hydro
+
+    assert callable(earthkit.hydro.river_network.load)
+
+
+def test_earthkit_hydro_obj_2():
+    from earthkit import hydro
+
+    assert callable(hydro.river_network.load)
+
+
 def test_earthkit_meteo_obj_1():
     import earthkit.meteo
 
@@ -94,15 +106,3 @@ def test_earthkit_transforms_obj_2():
     from earthkit import transforms
 
     assert callable(transforms.aggregate.spatial.masks)
-
-
-def test_earthkit_hydro_obj_1():
-    import earthkit.hydro
-
-    assert callable(earthkit.hydro.river_network.load)
-
-
-def test_earthkit_hydro_obj_2():
-    from earthkit import hydro
-
-    assert callable(hydro.river_network.load)

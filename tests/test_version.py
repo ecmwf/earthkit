@@ -48,6 +48,18 @@ def test_earthkit_geo_version_2():
     assert VERSION_RX.match(geo.__version__) is not None
 
 
+def test_earthkit_hydro_version_1():
+    import earthkit.hydro  # noqa
+
+    assert VERSION_RX.match(earthkit.hydro.__version__) is not None
+
+
+def test_earthkit_hydro_version_2():
+    from earthkit import hydro  # noqa
+
+    assert VERSION_RX.match(hydro.__version__) is not None
+
+
 def test_earthkit_meteo_version_1():
     import earthkit.meteo  # noqa
 
