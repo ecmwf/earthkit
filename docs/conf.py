@@ -90,6 +90,10 @@ xref_links = {
         "earthkit-transforms",
         "https://earthkit-transforms.readthedocs.io",
     ),
+    "earthkit-hydro": (
+        "earthkit-hydro",
+        "https://github.com/ecmwf/earthkit-hydro",
+    ),
     "eccodes": (
         "ecCodes",
         "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
