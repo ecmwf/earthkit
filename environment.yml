@@ -7,6 +7,7 @@ dependencies:
 - geos
 - pip:
   - earthkit-geo>=0.3.0
+  - earthkit-hydro>=0.1.2
   - earthkit-meteo>=0.3.0
   - earthkit-plots>=0.2.8
   - earthkit-regrid>=0.4.0

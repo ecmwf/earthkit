@@ -20,6 +20,16 @@ def test_earthkit_geo_import():
     from earthkit.geo import nearest_point_kdtree  # noqa
 
 
+def test_earthkit_transforms_import():
+    import earthkit.transforms  # noqa
+    from earthkit.transforms import aggregate  # noqa
+
+
+def test_earthkit_hydro_import():
+    import earthkit.hydro  # noqa
+    from earthkit.hydro import river_network  # noqa
+
+
 def test_earthkit_meteo_import():
     import earthkit.meteo  # noqa
     from earthkit.meteo import thermo  # noqa
@@ -38,8 +48,3 @@ def test_earthkit_regrid_import():
 def test_earthkit_time_import():
     import earthkit.time  # noqa
     from earthkit.time import DailySequence  # noqa
-
-
-def test_earthkit_transforms_import():
-    import earthkit.transforms  # noqa
-    from earthkit.transforms import aggregate  # noqa

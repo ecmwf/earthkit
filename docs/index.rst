@@ -32,6 +32,7 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
     earthkit-regrid <https://earthkit-regrid.readthedocs.io>
     earthkit-time <https://earthkit-time.readthedocs.io>
     earthkit-transforms <https://earthkit-transforms.readthedocs.io>
+    earthkit-hydro <https://github.com/ecmwf/earthkit-hydro>
 
 .. toctree::
    :maxdepth: 1
