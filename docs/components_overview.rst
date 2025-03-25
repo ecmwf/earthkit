@@ -17,15 +17,19 @@ This is the summary of the available ``earthkit`` components.
       - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-data-light.svg
           :width: 180px
     * - :xref:`earthkit-geo`
-      - Geospatial computations
+      - Geospatial computations.
       - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-geo-light.svg
+          :width: 180px
+    * - :xref:`earthkit-hydro`
+      - Operations on river networks.
+      - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-hydro-light.svg
           :width: 180px
     * - :xref:`earthkit-meteo`
       - Meteorological computations.
       - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-meteo-light.svg
           :width: 180px
     * - :xref:`earthkit-plots`
-      - Visualisation tools and templates
+      - Visualisation tools and templates.
       - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-plots-light.svg
           :width: 180px
     * - :xref:`earthkit-regrid`
