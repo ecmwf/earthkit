@@ -27,7 +27,7 @@ classifiers = [
 ]
 dynamic = [ "version" ]
 dependencies = [
-  "earthkit-data[all]>=0.13.5",
+  "earthkit-data[all]>=0.13.6",
   "earthkit-geo>=0.3",
   "earthkit-hydro>=0.1.2",
   "earthkit-meteo>=0.3",
