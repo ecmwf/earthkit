@@ -1,11 +1,9 @@
-<a href="https://github.com/ecmwf/earthkit">
-  <p align="center">
-    <picture>
-      <source srcset="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-dark.svg" media="(prefers-color-scheme: dark)">
-      <img src="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-light.svg" height="120">
-    </picture>
-  </p>
-</a>
+<p align="center">
+  <picture>
+    <source srcset="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-dark.svg" media="(prefers-color-scheme: dark)">
+    <img src="https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-light.svg" height="120">
+  </picture>
+</p>
 
 <p align="center">
   <a href="https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE">
