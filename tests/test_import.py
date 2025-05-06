@@ -48,3 +48,8 @@ def test_earthkit_regrid_import():
 def test_earthkit_time_import():
     import earthkit.time  # noqa
     from earthkit.time import DailySequence  # noqa
+
+
+def test_earthkit_utils_import():
+    import earthkit.utils  # noqa
+    from earthkit.utils import __version__  # noqa

@@ -106,3 +106,15 @@ def test_earthkit_transforms_obj_2():
     from earthkit import transforms
 
     assert callable(transforms.aggregate.spatial.masks)
+
+
+def test_earthkit_utils_obj_1():
+    import earthkit.utils
+
+    assert callable(earthkit.utils.array.array_to_numpy)
+
+
+def test_earthkit_utils_obj_2():
+    from earthkit import utils
+
+    assert callable(utils.array.array_to_numpy)
