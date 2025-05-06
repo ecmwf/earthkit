@@ -119,3 +119,15 @@ def test_earthkit_transforms_version_2():
     from earthkit import transforms  # noqa
 
     assert VERSION_RX.match(transforms.__version__) is not None
+
+
+def test_earthkit_utils_version_1():
+    import earthkit.utils  # noqa
+
+    assert VERSION_RX.match(earthkit.utils.__version__) is not None
+
+
+def test_earthkit_utils_version_2():
+    from earthkit import utils  # noqa
+
+    assert VERSION_RX.match(utils.__version__) is not None
