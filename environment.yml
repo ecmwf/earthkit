@@ -3,7 +3,7 @@ channels:
 - conda-forge
 - nodefaults
 dependencies:
-- earthkit-data>=0.14.0
+- earthkit-data>=0.14.3
 - geos
 - pip:
   - earthkit-geo>=0.3.0
