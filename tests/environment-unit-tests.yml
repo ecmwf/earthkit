@@ -8,9 +8,9 @@ dependencies:
 - pytest-cov
 - geos
 - pip:
-  - earthkit-data[all]>=0.14.3
+  - earthkit-data[all]>=0.14.4
   - earthkit-geo>=0.3.0
-  - earthkit-meteo>=0.3.0
+  - earthkit-meteo>=0.4.1
   - earthkit-plots>=0.3.1
   - earthkit-regrid>=0.4.0
   - earthkit-time>=0.1.7
