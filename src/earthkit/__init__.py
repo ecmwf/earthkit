@@ -7,21 +7,29 @@
 # nor does it submit to any jurisdiction.
 
 import importlib
-import sys
-import types
+import pkgutil
+import threading
 
-from ._version import __version__
+_lock = threading.RLock()
 
-
-class EarthkitModuleProxy(types.ModuleType):
-    def __getattr__(self, name):
-        full = f"{__name__}.{name}"
-        mod = importlib.import_module(full)
-        setattr(self, name, mod)
-        return mod
+__all__ = [
+    name
+    for _, name, ispkg in pkgutil.iter_modules(__path__)
+    if ispkg and not name.startswith("_") and not name in {"importlib", "pkgutil", "threading"}
+]
 
 
-current = sys.modules[__name__]
-proxy = EarthkitModuleProxy(current.__name__)
-proxy.__dict__.update(current.__dict__)
-sys.modules[__name__] = proxy
+def __getattr__(name):
+    if name not in __all__:
+        raise AttributeError(f"No such submodule: {name}")
+
+    with _lock:
+        if name in globals():
+            return globals()[name]
+        mod = importlib.import_module(f"{__name__}.{name}")
+        globals()[name] = mod
+    return mod
+
+
+def __dir__():
+    return list(globals()) + __all__
