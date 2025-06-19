@@ -18,6 +18,8 @@ __all__ = (
     if ispkg and not name.startswith("_") and not name in {"importlib", "pkgutil", "threading"}
 )
 
+from ._version import __version__
+
 
 def __getattr__(name):
     if name not in __all__:
