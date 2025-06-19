@@ -12,11 +12,11 @@ import threading
 
 _lock = threading.RLock()
 
-__all__ = [
+__all__ = (
     name
     for _, name, ispkg in pkgutil.iter_modules(__path__)
     if ispkg and not name.startswith("_") and not name in {"importlib", "pkgutil", "threading"}
-]
+)
 
 
 def __getattr__(name):
@@ -32,4 +32,4 @@ def __getattr__(name):
 
 
 def __dir__():
-    return list(globals()) + __all__
+    return tuple(globals()) + __all__
