@@ -12,7 +12,7 @@ import threading
 
 _lock = threading.RLock()
 
-__all__ = (
+__all__ = tuple(
     name
     for _, name, ispkg in pkgutil.iter_modules(__path__)
     if ispkg and not name.startswith("_") and not name in {"importlib", "pkgutil", "threading"}
