@@ -10,27 +10,39 @@ import importlib
 import pkgutil
 import threading
 
+try:
+    from earthkit._version import __version__
+except:
+    __version__ = -1  # decide what to put as a placeholder here
+
 _lock = threading.RLock()
 
-__all__ = (
+# declare as namespace (older pre PEP 420 approach)
+__path__ = pkgutil.extend_path(__path__, __name__)
+
+EXCLUDE = {"importlib", "pkgutil", "threading"}
+discovered = {
     name
     for _, name, ispkg in pkgutil.iter_modules(__path__)
-    if ispkg and not name.startswith("_") and not name in {"importlib", "pkgutil", "threading"}
-)
+    if ispkg and not name.startswith("_") and name not in EXCLUDE
+}
+# reproducible ordering
+__all__ = tuple(sorted(discovered))
 
-from ._version import __version__
 
-
+# dynamic and lazy module loading
 def __getattr__(name):
-    if name not in __all__:
-        raise AttributeError(f"No such submodule: {name}")
-
     with _lock:
         if name in globals():
             return globals()[name]
-        mod = importlib.import_module(f"{__name__}.{name}")
+        try:
+            mod = importlib.import_module(f"{__name__}.{name}")
+        except Exception as e:
+            raise AttributeError(
+                f"Module '{__name__}' has no attribute '{name}' " f"(failed to import '{__name__}.{name}'): {e}"
+            ) from e
         globals()[name] = mod
-    return mod
+        return mod
 
 
 def __dir__():
