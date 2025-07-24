@@ -53,3 +53,8 @@ def test_earthkit_time_import():
 def test_earthkit_utils_import():
     import earthkit.utils  # noqa
     from earthkit.utils import __version__  # noqa
+
+
+def test_earthkit_workflows_import():
+    import earthkit.workflows  # noqa
+    from earthkit.workflows.fluent import Payload  # noqa

@@ -24,6 +24,7 @@ import earthkit.plots as plots
 import earthkit.regrid as regrid
 import earthkit.time as time
 import earthkit.transforms as transforms
+import earthkit.workflows as workflows
 
 __all__ = [
     "data",
@@ -34,5 +35,6 @@ __all__ = [
     "time",
     "transforms",
     "hydro",
+    "workflows",
     "__version__",
 ]

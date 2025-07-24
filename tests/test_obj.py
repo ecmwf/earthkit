@@ -118,3 +118,27 @@ def test_earthkit_utils_obj_2():
     from earthkit import utils
 
     assert callable(utils.array.array_to_numpy)
+
+
+def test_earthkit_utils_obj_3():
+    import earthkit as ek
+
+    assert callable(ek.utils.array.array_to_numpy)
+
+
+def test_earthkit_workflows_obj_1():
+    import earthkit.workflows as ekw
+
+    assert callable(ekw.fluent.Payload)
+
+
+def test_earthkit_workflows_obj_2():
+    from earthkit import workflows
+
+    assert callable(workflows.fluent.Payload)
+
+
+def test_earthkit_workflows_obj_3():
+    import earthkit as ek
+
+    assert callable(ek.workflows.fluent.Payload)
