@@ -44,3 +44,7 @@ This is the summary of the available ``earthkit`` components.
       - Aggregation and transformation of geospatial data.
       - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-transforms-light.svg
           :width: 180px
+    * - :xref:`earthkit-workflows`
+      - Scheduling and execution of task graphs.
+      - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-workflows-light.svg
+          :width: 180px

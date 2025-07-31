@@ -131,3 +131,15 @@ def test_earthkit_utils_version_2():
     from earthkit import utils  # noqa
 
     assert VERSION_RX.match(utils.__version__) is not None
+
+
+def test_earthkit_workflows_version_1():
+    import earthkit.workflows  # noqa
+
+    assert VERSION_RX.match(earthkit.workflows.__version__) is not None
+
+
+def test_earthkit_workflows_version_2():
+    from earthkit import workflows  # noqa
+
+    assert VERSION_RX.match(workflows.__version__) is not None
