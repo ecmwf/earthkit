@@ -45,11 +45,12 @@ urls.Issues = "https://github.com/ecmwf/earthkit.issues"
 urls.Repository = "https://github.com/ecmwf/earthkit/"
 
 [tool.setuptools.packages.find]
-include = [ "earthkit", "earthkit.*" ]
-where = [ "src/", "./" ]
+include = [ "earthkit.*" ]
+where = [ "src/" ]
 
 [tool.setuptools_scm]
 version_file = "src/earthkit/_version.py"
+local_scheme = "no-local-version"
 
 [tool.isort]
 profile = "black"
