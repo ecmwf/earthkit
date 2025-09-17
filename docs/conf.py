@@ -92,7 +92,7 @@ xref_links = {
     ),
     "earthkit-hydro": (
         "earthkit-hydro",
-        "https://github.com/ecmwf/earthkit-hydro",
+        "https://earthkit-hydro.readthedocs.io",
     ),
     "earthkit-workflows": (
         "earthkit-workflows",
