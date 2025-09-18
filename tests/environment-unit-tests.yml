@@ -16,5 +16,5 @@ dependencies:
   - earthkit-time>=0.1.7
   - earthkit-transforms>=0.4
   - earthkit-hydro>=1.0.0
-  - earthkit-utils>=0.0.1
+  - earthkit-utils>=0.1.2
   - earthkit-workflows>=0.3.6

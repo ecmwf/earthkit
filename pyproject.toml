@@ -35,7 +35,7 @@ dependencies = [
   "earthkit-regrid>=0.4",
   "earthkit-time>=0.1.7",
   "earthkit-transforms>=0.4",
-  "earthkit-utils>=0.0.1",
+  "earthkit-utils>=0.1.2",
   "earthkit-workflows>=0.3.6",
 ]
 optional-dependencies.test = [ "pytest" ]
@@ -46,10 +46,11 @@ urls.Repository = "https://github.com/ecmwf/earthkit/"
 
 [tool.setuptools.packages.find]
 include = [ "earthkit", "earthkit.*" ]
-where = [ "src/", "./" ]
+where = [ "src/" ]
 
 [tool.setuptools_scm]
 version_file = "src/earthkit/_version.py"
+local_scheme = "no-local-version"
 
 [tool.isort]
 profile = "black"
