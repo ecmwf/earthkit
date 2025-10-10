@@ -1,12 +1,14 @@
 Welcome to earthkit's documentation
 ======================================================
 
-|Static Badge| |image1| |License: Apache 2.0|
+|Static Badge| |License: Apache 2.0|
 
 .. |Static Badge| image:: https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE/foundation_badge.svg
    :target: https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE
 .. |License: Apache 2.0| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
    :target: https://opensource.org/licenses/apache-2-0
+
+.. tip::
 
 For an interactive overview, see the `earthkit website <https://ecmwf.github.io/earthkit-website/>`__.
 
