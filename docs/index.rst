@@ -10,7 +10,7 @@ Welcome to earthkit's documentation
 
 .. tip::
 
-For an interactive overview, see the `earthkit website <https://ecmwf.github.io/earthkit-website/>`__.
+   For an interactive overview, see the `earthkit website <https://ecmwf.github.io/earthkit-website/>`__.
 
 **earthkit** is a new open-source Python project led by ECMWF, providing powerful tools for speeding up weather and climate science workflows by simplifying data access, processing, analysis, visualisation and much more.
 
