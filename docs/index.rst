@@ -1,9 +1,16 @@
 Welcome to earthkit's documentation
 ======================================================
 
-.. warning::
+|Static Badge| |License: Apache 2.0|
 
-   This project is in the **BETA** stage of development. Please be aware that interfaces and functionality may change as the project develops. If this software is to be used in operational systems you are **strongly advised to use a released tag in your system configuration**, and you should be willing to accept incoming changes and bug fixes that require adaptations on your part. ECMWF **does use** this software in operations and abides by the same caveats.
+.. |Static Badge| image:: https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE/foundation_badge.svg
+   :target: https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE
+.. |License: Apache 2.0| image:: https://img.shields.io/badge/License-Apache%202.0-blue.svg
+   :target: https://opensource.org/licenses/apache-2-0
+
+.. tip::
+
+   For an interactive overview, see the `earthkit website <https://ecmwf.github.io/earthkit-website/>`__.
 
 **earthkit** is a new open-source Python project led by ECMWF, providing powerful tools for speeding up weather and climate science workflows by simplifying data access, processing, analysis, visualisation and much more.
 
