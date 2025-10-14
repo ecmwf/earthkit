@@ -58,6 +58,6 @@ repos:
   hooks:
   - id: sphinx-lint
 - repo: https://github.com/tox-dev/pyproject-fmt
-  rev: "2.2.4"
+  rev: "v2.8.0"
   hooks:
   - id: pyproject-fmt
