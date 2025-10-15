@@ -6,6 +6,7 @@ dependencies:
 - pip
 - pytest
 - pytest-cov
+- pytest-forked
 - geos
 - pip:
   - earthkit-data[all]>=0.17.0

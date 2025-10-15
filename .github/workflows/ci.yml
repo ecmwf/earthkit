@@ -4,10 +4,10 @@ on:
   # Trigger the workflow on push to master or develop, except tag creation
   push:
     branches:
-    - 'main'
-    - 'develop'
+    - "main"
+    - "develop"
     tags-ignore:
-    - '**'
+    - "**"
     paths-ignore:
     - "docs/**"
     - "README.md"
@@ -39,7 +39,6 @@ jobs:
       codecov_upload: true
       python_qa: false
     secrets: inherit
-
 
   # Build downstream packages on HPC
   downstream-ci-hpc:
