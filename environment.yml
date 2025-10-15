@@ -9,7 +9,7 @@ dependencies:
   - earthkit-geo>=0.3.0
   - earthkit-hydro>=1.0.0
   - earthkit-meteo>=0.4.1
-  - earthkit-plots>=0.3.5
+  - earthkit-plots>=0.5.1
   - earthkit-regrid>=0.5.0
   - earthkit-time>=0.1.7
   - earthkit-transforms>=0.5.0
