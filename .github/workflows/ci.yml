@@ -4,10 +4,10 @@ on:
   # Trigger the workflow on push to master or develop, except tag creation
   push:
     branches:
-    - 'main'
-    - 'develop'
+    - "main"
+    - "develop"
     tags-ignore:
-    - '**'
+    - "**"
     paths-ignore:
     - "docs/**"
     - "README.md"
@@ -33,19 +33,18 @@ jobs:
   downstream-ci:
     name: downstream-ci
     if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
-    uses: ecmwf/downstream-ci/.github/workflows/downstream-ci.yml@main
+    uses: ecmwf/downstream-ci/.github/workflows/downstream-ci.yml@feature/earthkit-pytest-forked
     with:
       earthkit: ecmwf/earthkit@${{ github.event.pull_request.head.sha || github.sha }}
       codecov_upload: true
       python_qa: false
     secrets: inherit
 
-
   # Build downstream packages on HPC
   downstream-ci-hpc:
     name: downstream-ci-hpc
     if: ${{ !github.event.pull_request.head.repo.fork && github.event.action != 'labeled' || github.event.label.name == 'approved-for-ci' }}
-    uses: ecmwf/downstream-ci/.github/workflows/downstream-ci-hpc.yml@main
+    uses: ecmwf/downstream-ci/.github/workflows/downstream-ci-hpc.yml@feature/earthkit-pytest-forked
     with:
       earthkit: ecmwf/earthkit@${{ github.event.pull_request.head.sha || github.sha }}
     secrets: inherit
