@@ -87,25 +87,22 @@ def test_earthkit_meteo_obj_3():
     assert callable(ek.meteo.thermo.potential_temperature)
 
 
-@pytest.mark.skip(reason="does not work")
 def test_earthkit_plots_obj_1():
     import earthkit.plots as ekp
 
-    assert callable(ekp.quickmap.plot)
+    assert callable(ekp.quickplot)
 
 
-@pytest.mark.skip(reason="does not work")
 def test_earthkit_plots_obj_2():
     from earthkit import plots
 
-    assert callable(plots.quickmap.plot)
+    assert callable(plots.quickplot)
 
 
-@pytest.mark.skip(reason="does not work")
 def test_earthkit_plots_obj_3():
     import earthkit as ek
 
-    assert callable(ek.plots.quickmap.plot)
+    assert callable(ek.plots.quickplot)
 
 
 def test_earthkit_regrid_obj_1():
