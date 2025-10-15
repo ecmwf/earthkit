@@ -41,7 +41,7 @@ dependencies = [
   "earthkit-utils>=0.1.2",
   "earthkit-workflows>=0.4.7",
 ]
-optional-dependencies.test = [ "pytest" ]
+optional-dependencies.test = [ "pytest", "pytest-forked" ]
 urls.Documentation = "https://earthkit.readthedocs.io/"
 urls.Homepage = "https://github.com/ecmwf/earthkit/"
 urls.Issues = "https://github.com/ecmwf/earthkit.issues"
