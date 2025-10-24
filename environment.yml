@@ -6,7 +6,7 @@ dependencies:
 - earthkit-data>=0.17.0
 - geos
 - pip:
-  - earthkit-geo>=0.3.0
+  - earthkit-geo[all]>=0.4.0
   - earthkit-hydro>=1.0.0
   - earthkit-meteo>=0.4.1
   - earthkit-plots>=0.5.1
