@@ -14,6 +14,9 @@ build:
   - ecmwf/eccodes-python@develop
   - ecmwf/pyodc@develop
   - ecmwf/earthkit-utils@develop
+  - ecmwf/earthkit-hydro@develop
+  - ecmwf/earthkit-data@develop
+  - ecmwf/earthkit-meteo@develop
   env:
   - ECCODES_SAMPLES_PATH=$ECCODES_DIR/share/eccodes/samples
   - ECCODES_DEFINITION_PATH=$ECCODES_DIR/share/eccodes/definitions
