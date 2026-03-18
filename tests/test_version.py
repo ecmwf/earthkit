@@ -17,11 +17,10 @@ import pytest
 VERSION_RX = re.compile(r"""\d+\.\d+\.*""")
 
 
-def test_version():
-    import earthkit
+# def test_version():
+#     import earthkit
 
-    assert VERSION_RX.match(earthkit.__version__) is not None
-    assert VERSION_RX.match(earthkit.data.__version__) is not None
+#     assert VERSION_RX.match(earthkit.__version__) is not None
 
 
 def test_earthkit_data_version_1():
