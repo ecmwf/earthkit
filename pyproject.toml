@@ -1,5 +1,5 @@
 [build-system]
-requires = [ "setuptools>=61", "setuptools-scm>=8" ]
+requires = [ "setuptools>=61" ]
 
 [project]
 name = "earthkit"
@@ -9,7 +9,7 @@ license = { text = "Apache License Version 2.0" }
 authors = [
   { name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int" },
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 
 classifiers = [
   "Development Status :: 4 - Beta",
@@ -18,7 +18,6 @@ classifiers = [
   "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
@@ -47,13 +46,8 @@ urls.Homepage = "https://github.com/ecmwf/earthkit/"
 urls.Issues = "https://github.com/ecmwf/earthkit.issues"
 urls.Repository = "https://github.com/ecmwf/earthkit/"
 
-[tool.setuptools.packages.find]
-include = [ "earthkit", "earthkit.*" ]
-where = [ "src/" ]
-
-[tool.setuptools_scm]
-version_file = "src/earthkit/_version.py"
-local_scheme = "no-local-version"
+[tool.setuptools]
+packages = [  ]
 
 [tool.isort]
 profile = "black"
