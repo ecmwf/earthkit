@@ -27,6 +27,12 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
    examples/index
 
 .. toctree::
+   :maxdepth: 1
+   :caption: Developer guide
+
+   development/index
+
+.. toctree::
     :maxdepth: 1
     :caption: Components
     :titlesonly:
