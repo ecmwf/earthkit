@@ -1,6 +1,6 @@
-.. _examples:
+.. _tutorials:
 
-General tutorials
+Tutorials
 ================
 
 Here is a list of small tutorial notebooks to illustrate how to use earthkit.
