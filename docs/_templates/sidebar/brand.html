@@ -1,0 +1,14 @@
+{# Earthkit sidebar brand: clickable logo + package selector mount point #}
+<a class="sidebar-brand" href="{{ pathto(master_doc) }}">
+  {%- if theme_light_logo and theme_dark_logo %}
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="{{ pathto('_static/' + theme_light_logo, 1) }}" alt="{{ project }}"/>
+    <img class="sidebar-logo only-dark" src="{{ pathto('_static/' + theme_dark_logo, 1) }}" alt="{{ project }}"/>
+  </div>
+  {%- elif theme_light_logo %}
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo" src="{{ pathto('_static/' + theme_light_logo, 1) }}" alt="{{ project }}"/>
+  </div>
+  {%- endif %}
+</a>
+<div id="ek-project-selector-mount" class="ek-project-selector-brand"></div>

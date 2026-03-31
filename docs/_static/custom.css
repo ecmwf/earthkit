@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+:root {
+  --font-stack: "Nunito", sans-serif;
+  --font-stack--monospace: "Nunito", sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Sidebar solid background colour */
+.sidebar-drawer {
+  background: #262640;
+}
+
+/* SVG overlay – absolute on mobile so it collapses with the drawer */
+.sidebar-drawer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("octahedral-grid.svg") no-repeat top center / auto 150vh;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/*
+  On desktop, switch the overlay to position: fixed so it stays in place
+  while scrolling (avoids background-attachment:fixed Safari flicker).
+  Width values mirror Furo's own sidebar-drawer widths at each breakpoint.
+*/
+@media screen and (min-width: 63em) {
+  .sidebar-drawer::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: calc(50% - 18.5em);
+    min-width: 15em;
+    height: 100vh;
+  }
+}
+
+@media screen and (min-width: 82em) {
+  .sidebar-drawer::before {
+    width: calc(50% - 26em);
+  }
+}
+
+/* ── xarray dark-mode fix for Furo "auto" theme ──────────────────────
+   xarray's inline <style> only targets explicit body[data-theme="dark"],
+   but Furo's auto mode keeps data-theme="auto" and relies on
+   @media (prefers-color-scheme: dark).  Mirror the dark palette here
+   so xarray widgets remain readable when the OS is in dark mode.
+   ─────────────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) {
+    --xr-font-color0: rgba(255, 255, 255, 1);
+    --xr-font-color2: rgba(255, 255, 255, 0.54);
+    --xr-font-color3: rgba(255, 255, 255, 0.38);
+    --xr-border-color: #555;
+    --xr-disabled-color: #888;
+    --xr-background-color: var(--color-background-primary, #131416);
+    --xr-background-color-row-even: var(--color-background-secondary, #1a1c1e);
+    --xr-background-color-row-odd: var(--color-background-hover, #1e2124);
+  }
+}
+
+/* Dropdown container in the brand slot (above search bar) */
+.ek-project-selector-brand {
+  padding: 0.4rem 0.75rem 0.6rem;
+}
+
+/* Related projects dropdown */
+.ek-project-selector {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ek-project-selector select {
+  flex: 1;
+  min-width: 0;
+  background: #131320;
+  color: #fff;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 0.3rem 0.4rem;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  appearance: auto;
+}
+
+.ek-project-selector select:focus {
+  border-color: #FCE54B;
+}
+
+/* Homepage card styling */
+.sd-card .sd-card-img-top {
+  height: 100px;
+  width: auto;
+  object-fit: contain;
+  margin: 1rem auto 0 auto;
+  display: block;
+  background: transparent;
+  filter: brightness(0.8) invert(0.1);
+  transition: filter 0.2s ease;
+}
+
+/* Dark mode when user explicitly selects dark */
+[data-theme="dark"] .sd-card .sd-card-img-top {
+  filter: invert(1) brightness(0.6);
+}
+
+/* Dark mode when theme = auto and system prefers dark */
+@media (prefers-color-scheme: dark) {
+  body:not([data-theme="light"]) .sd-card .sd-card-img-top {
+    filter: invert(1) brightness(0.6);
+  }
+}

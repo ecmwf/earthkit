@@ -5,23 +5,7 @@
   </picture>
 </p>
 
-<p align="center">
-  <a href="https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE">
-    <img src="https://github.com/ecmwf/codex/raw/refs/heads/main/ESEE/foundation_badge.svg" alt="ECMWF Software EnginE">
-  </a>
-  <a href="https://github.com/ecmwf/codex/raw/refs/heads/main/Project Maturity">
-    <img src="https://github.com/ecmwf/codex/raw/refs/heads/main/Project Maturity/incubating_badge.svg" alt="Maturity Level">
-  </a>
-  <!-- <a href="https://codecov.io/gh/ecmwf/earthkit">
-    <img src="https://codecov.io/gh/ecmwf/earthkit/branch/main/graph/badge.svg" alt="Code Coverage">
-  </a> -->
-  <a href="https://opensource.org/licenses/apache-2-0">
-    <img src="https://img.shields.io/badge/Licence-Apache 2.0-blue.svg" alt="Licence">
-  </a>
-  <a href="https://github.com/ecmwf/earthkit/releases">
-    <img src="https://img.shields.io/github/v/release/ecmwf/earthkit?color=purple&label=Release" alt="Latest Release">
-  </a>
-</p>
+
 
 <p align="center">
   <!-- <a href="#quick-start">Quick Start</a>
