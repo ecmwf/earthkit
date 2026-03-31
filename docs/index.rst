@@ -1,6 +1,10 @@
 Earthkit 
 =========
 
+.. important::
+
+    This software is in **release candidate** stage. It is not yet considered stable and may still undergo significant changes before the final 1.0 release. We welcome feedback and contributions as we approach that milestone.
+
 .. tip::
 
    For an interactive overview, see the `earthkit website <https://earthkit.ecmwf.int/>`__.
@@ -15,7 +19,8 @@ and leverages the robust and operations-ready software stack that is familiar to
 
 The interface of :ref:`earthkit components <components>` is designed to be high-level in order to provide common tools to support activities across ECMWF and beyond. The design of the components also takes **scalability** into account, so researchers can enjoy efficiency whilst providing easier transfer to operations.
 
-**earthkit** is still under development but some components are already available in beta through PyPI and their GitHub repositories.
+**earthkit** is still under development but a selection of core components are approaching
+a version 1.0.0 release and have release candidates available on PyPi and their GitHub repositories.
 
 
 .. grid:: 1 1 2 2
