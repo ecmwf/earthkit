@@ -8,11 +8,11 @@ Installation and Getting Started
 Installing earthkit
 ----------------------------
 
-Install **earthkit** with python3 (>= 3.10) and ``pip`` as follows:
+Install **earthkit** with python3 (>= 3.10) and ``pip`` as follows (specific to version 1.0.0 release candidate):
 
 .. code-block:: bash
 
-    python3 -m pip install earthkit
+    python3 -m pip install earthkit==1.0.0rc0
 
 .. Alternatively, install via ``conda`` with:
 

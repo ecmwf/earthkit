@@ -2,16 +2,16 @@
 
 packages:
 - name: earthkit
-  url: https://earthkit.readthedocs.io/en/latest
+  url: https://earthkit.readthedocs.io/en/release-1.0.0rc0
 - name: earthkit-data
   url: https://earthkit-data.readthedocs.io/en/latest
 - name: earthkit-geo
-  url: https://earthkit-geo.readthedocs.io/en/latest
+  url: https://earthkit-geo.readthedocs.io/en/release-1.0.0rc0
 - name: earthkit-hydro
   url: https://earthkit-hydro.readthedocs.io/en/latest
 - name: earthkit-meteo
-  url: https://earthkit-meteo.readthedocs.io/en/latest
+  url: https://earthkit-meteo.readthedocs.io/en/release-1.0.0rc0
 - name: earthkit-plots
-  url: https://earthkit-plots.readthedocs.io/en/latest
+  url: https://earthkit-plots.readthedocs.io/en/release-1.0.0rc0
 - name: earthkit-transforms
   url: https://earthkit-transforms.readthedocs.io/en/latest
