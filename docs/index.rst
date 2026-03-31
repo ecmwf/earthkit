@@ -17,12 +17,45 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
 
 **earthkit** is still under development but some components are already available in beta through PyPI and their GitHub repositories.
 
+
+.. grid:: 1 1 2 2
+   :gutter: 2
+
+   .. grid-item-card:: Installation and Getting Started
+      :img-top: _static/rocket.svg
+      :link: getting-started
+      :link-type: doc
+      :class-card: sd-shadow-sm
+
+      New to earthkit? Start here with installation and a quick overview.
+
+
+   .. grid-item-card:: Tutorials
+      :img-top: _static/book.svg
+      :link: tutorials/index
+      :link-type: doc
+      :class-card: sd-shadow-sm
+
+      Step-by-step guides to learn earthkit.
+
+
+
+**Support**
+
+Have a feature request or found a bug? Feel free to open an
+`issue <https://github.com/ecmwf/earthkit/issues/new/choose>`_.
+
+
+
 .. toctree::
-   :maxdepth: 1
-   :caption: Examples
+   :caption: User guide
+   :maxdepth: 2
    :hidden:
 
-   examples/index
+   getting-started
+   tutorials/index
+
+
 
 .. toctree::
    :maxdepth: 1
@@ -34,13 +67,11 @@ The interface of :ref:`earthkit components <components>` is designed to be high-
 
 .. toctree::
    :maxdepth: 1
-   :caption: Installation
+   :caption: Installation and Getting Started
    :titlesonly:
    :hidden:
 
-   install
-   licence
-
+   getting-started
 
 
 .. toctree::

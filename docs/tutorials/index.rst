@@ -1,9 +1,9 @@
 .. _examples:
 
-Examples
-============
+General tutorials
+================
 
-Here is a list of example notebooks to illustrate how to use earthkit.
+Here is a list of small tutorial notebooks to illustrate how to use earthkit.
 
 
 .. toctree::
