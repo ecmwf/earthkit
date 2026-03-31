@@ -1,0 +1,17 @@
+# List of earthkit documentation packages shown in the sidebar dropdown.
+
+packages:
+- name: earthkit
+  url: https://earthkit.readthedocs.io/en/latest
+- name: earthkit-data
+  url: https://earthkit-data.readthedocs.io/en/latest
+- name: earthkit-geo
+  url: https://earthkit-geo.readthedocs.io/en/latest
+- name: earthkit-hydro
+  url: https://earthkit-hydro.readthedocs.io/en/latest
+- name: earthkit-meteo
+  url: https://earthkit-meteo.readthedocs.io/en/latest
+- name: earthkit-plots
+  url: https://earthkit-plots.readthedocs.io/en/latest
+- name: earthkit-transforms
+  url: https://earthkit-transforms.readthedocs.io/en/latest
