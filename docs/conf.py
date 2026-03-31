@@ -35,6 +35,10 @@ src_path = os.path.normpath(
 )
 sys.path.insert(0, src_path)
 
+# Adds path to the folder _ext, where extensions are stored
+sys.path.insert(0, os.path.abspath("."))
+sys.path.append(os.path.abspath("./_ext"))
+
 project = "earthkit"
 module_prefix = project.replace("-", ".")
 autodocs_dir = "autodocs"
@@ -80,6 +84,8 @@ extensions = [
     "sphinx.ext.extlinks",
     # Enables responsive grid layouts and card components
     "sphinx_design",
+    # Custom extension for external cross-references
+    "xref",
 ]
 
 autodoc_inherit_docstrings = True
@@ -223,6 +229,51 @@ def _write_earthkit_packages_js(app):
     js_path = os.path.join(static_dir, "earthkit-packages.js")
     with open(js_path, "w", encoding="utf-8") as fh:
         fh.write(f"window.earthkitPackages = {json.dumps(packages)};\n")
+
+
+# xref links configuration
+xref_links = {
+    "earthkit-data": (
+        "earthkit-data",
+        "https://earthkit-data.readthedocs.io",
+    ),
+    "earthkit-geo": (
+        "earthkit-geo",
+        "https://earthkit-geo.readthedocs.io",
+    ),
+    "earthkit-hydro": (
+        "earthkit-hydro",
+        "https://earthkit-hydro.readthedocs.io",
+    ),
+    "earthkit-meteo": (
+        "earthkit-meteo",
+        "https://earthkit-meteo.readthedocs.io",
+    ),
+    "earthkit-plots": (
+        "earthkit-plots",
+        "https://earthkit-plots.readthedocs.io",
+    ),
+    "earthkit-regrid": (
+        "earthkit-regrid",
+        "https://earthkit-regrid.readthedocs.io",
+    ),
+    "earthkit-time": (
+        "earthkit-time",
+        "https://earthkit-time.readthedocs.io",
+    ),
+    "earthkit-transforms": (
+        "earthkit-transforms",
+        "https://earthkit-transforms.readthedocs.io",
+    ),
+    "earthkit-workflows": (
+        "earthkit-workflows",
+        "https://github.com/ecmwf/earthkit-workflows/blob/develop/readme.md",
+    ),
+    "eccodes": (
+        "ecCodes",
+        "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
+    ),
+}
 
 
 def setup(app):
