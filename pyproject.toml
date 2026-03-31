@@ -30,13 +30,13 @@ classifiers = [
 ]
 dynamic = [ "version" ]
 dependencies = [
-  "earthkit-data[all]>=0.17",
-  "earthkit-geo[all]>=0.4",
+  "earthkit-data[all]==1.0.0rc0",
+  "earthkit-geo[all]==1.0.0rc0",
   "earthkit-hydro>=1",
-  "earthkit-meteo>=0.4.1",
-  "earthkit-plots>=0.5.1",
-  "earthkit-transforms>=0.5",
-  "earthkit-utils>=0.1.2",
+  "earthkit-meteo==1.0.0rc0",
+  "earthkit-plots==1.0.0rc0",
+  "earthkit-transforms==1.0.0rc0",
+  "earthkit-utils==1.0.0rc0",
 ]
 optional-dependencies.test = [ "pytest", "pytest-forked" ]
 urls.Documentation = "https://earthkit.readthedocs.io/"
