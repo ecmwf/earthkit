@@ -1,5 +1,5 @@
-Earthkit 
-=========
+earthkit
+========
 
 **earthkit** is a new open-source Python project led by ECMWF, providing powerful tools for speeding up weather
 and climate science workflows by simplifying data access, processing, analysis, visualisation and much more.
