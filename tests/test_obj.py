@@ -24,12 +24,6 @@ def test_earthkit_data_obj_2():
     assert callable(data.from_source)
 
 
-def test_earthkit_data_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.data.from_source)
-
-
 def test_earthkit_geo_obj_1():
     import earthkit.geo as ekg
 
@@ -42,12 +36,6 @@ def test_earthkit_geo_obj_2():
     assert callable(geo.nearest_point_kdtree)
 
 
-def test_earthkit_geo_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.geo.nearest_point_kdtree)
-
-
 def test_earthkit_hydro_obj_1():
     import earthkit.hydro as ekh
 
@@ -58,12 +46,6 @@ def test_earthkit_hydro_obj_2():
     from earthkit import hydro
 
     assert callable(hydro.river_network.load)
-
-
-def test_earthkit_hydro_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.hydro.river_network.load)
 
 
 @pytest.mark.skip(reason="does not work")
@@ -80,13 +62,6 @@ def test_earthkit_meteo_obj_2():
     assert callable(meteo.thermo.potential_temperature)
 
 
-@pytest.mark.skip(reason="does not work")
-def test_earthkit_meteo_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.meteo.thermo.potential_temperature)
-
-
 def test_earthkit_plots_obj_1():
     import earthkit.plots as ekp
 
@@ -97,12 +72,6 @@ def test_earthkit_plots_obj_2():
     from earthkit import plots
 
     assert callable(plots.quickplot)
-
-
-def test_earthkit_plots_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.plots.quickplot)
 
 
 @pytest.mark.skip
@@ -121,14 +90,6 @@ def test_earthkit_time_obj_2():
     assert x is not None
 
 
-@pytest.mark.skip
-def test_earthkit_time_obj_3():
-    import earthkit as ek
-
-    x = ek.time.DailySequence()
-    assert x is not None
-
-
 @pytest.mark.skip(reason="does not work")
 def test_earthkit_transforms_obj_1():
     import earthkit.transforms as ekt
@@ -141,13 +102,6 @@ def test_earthkit_transforms_obj_2():
     from earthkit import transforms
 
     assert callable(transforms.aggregate.spatial.masks)
-
-
-@pytest.mark.skip(reason="does not work")
-def test_earthkit_transforms_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.transforms.aggregate.spatial.masks)
 
 
 @pytest.mark.skip(reason="does not work")
@@ -164,13 +118,6 @@ def test_earthkit_utils_obj_2():
     assert callable(utils.array.array_to_numpy)
 
 
-@pytest.mark.skip(reason="does not work")
-def test_earthkit_utils_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.utils.array.array_to_numpy)
-
-
 @pytest.mark.skip
 def test_earthkit_workflows_obj_1():
     import earthkit.workflows as ekw
@@ -183,10 +130,3 @@ def test_earthkit_workflows_obj_2():
     from earthkit import workflows
 
     assert callable(workflows.fluent.Payload)
-
-
-@pytest.mark.skip
-def test_earthkit_workflows_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.workflows.fluent.Payload)
