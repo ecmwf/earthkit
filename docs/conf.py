@@ -164,7 +164,7 @@ html_js_files = [
     "custom.js",
 ]
 
-html_favicon = "./_static/earthkit-notext.svg"
+html_favicon = "./_static/earthkit-logo-only.svg"
 
 d_thing = (
     "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1."
