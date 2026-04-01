@@ -13,15 +13,16 @@ and climate science workflows by simplifying data access, processing, analysis, 
    For an interactive overview, see the `earthkit website <https://earthkit.ecmwf.int/>`__.
 
 
-**earthkit** offers **multiple interoperable** :ref:`software components <components>` built on top of
-well-established open-source Python libraries like numpy, pandas and matplotlib. earthkit also integrates
-and leverages the robust and operations-ready software stack that is familiar to ECMWF production systems
-(e.g. ecCodes, FDB, etc).
+.. grid:: 1
+   :gutter: 2
 
-The interface of :ref:`earthkit components <components>` is designed to be high-level in order to provide common tools to support activities across ECMWF and beyond. The design of the components also takes **scalability** into account, so researchers can enjoy efficiency whilst providing easier transfer to operations.
+   .. grid-item-card:: Why earthkit?
+      :img-top:  _static/earthkit-grey.svg
+      :link: why
+      :link-type: doc
+      :class-card: sd-shadow-sm
 
-**earthkit** is still under development but a selection of core components are approaching
-a version 1.0.0 release and have release candidates available on PyPi and their GitHub repositories.
+      The motivation and key features of earthkit.
 
 
 .. grid:: 1 1 2 2
@@ -44,6 +45,8 @@ a version 1.0.0 release and have release candidates available on PyPi and their 
 
       Step-by-step guides to learn earthkit.
 
+We plan to add many more examples of using Earthkit as a complete package to these pages. In the meantime, we invite you to look at
+the documentation for the component Earthkit packages via the navigation drop-down on the left.
 
 
 **Support**
