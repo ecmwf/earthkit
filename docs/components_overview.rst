@@ -32,19 +32,7 @@ This is the summary of the available ``earthkit`` components.
       - Visualisation tools and templates.
       - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-plots-light.svg
           :width: 180px
-    * - :xref:`earthkit-regrid`
-      - Regridding of geospatial data.
-      - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-regrid-light.svg
-          :width: 180px
-    * - :xref:`earthkit-time`
-      - Manipulation of dates and time for weather forecasting.
-      - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-time-light.svg
-          :width: 180px
     * - :xref:`earthkit-transforms`
       - Aggregation and transformation of geospatial data.
       - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-transforms-light.svg
-          :width: 180px
-    * - :xref:`earthkit-workflows`
-      - Scheduling and execution of task graphs.
-      - .. image:: https://github.com/ecmwf/logos/raw/refs/heads/main/logos/earthkit/earthkit-workflows-light.svg
           :width: 180px
