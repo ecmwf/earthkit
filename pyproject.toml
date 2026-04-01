@@ -1,11 +1,12 @@
 [build-system]
-requires = [ "setuptools>=61" ]
+requires = [ "setuptools>=77" ]
 
 [project]
 name = "earthkit"
 description = "Toolkit for earth science workflows"
 readme = "README.md"
-license = { text = "Apache License Version 2.0" }
+license = "Apache-2.0"
+license-files = [ "LICENSE" ]
 authors = [
   { name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int" },
 ]
@@ -15,7 +16,6 @@ classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
   "Intended Audience :: Science/Research",
-  "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.10",
@@ -29,13 +29,13 @@ classifiers = [
 ]
 dynamic = [ "version" ]
 dependencies = [
-  "earthkit-data[all]>=1.0.0rc0",
-  "earthkit-geo[all]>=1.0.0rc0",
-  "earthkit-hydro>=1.3.0rc0",
-  "earthkit-meteo>=1.0.0rc0",
-  "earthkit-plots>=1.0.0rc0",
-  "earthkit-transforms>=1.0.0rc0",
-  "earthkit-utils>=1.0.0rc0",
+  "earthkit-data[all]>=1rc0",
+  "earthkit-geo[all]>=1rc0",
+  "earthkit-hydro>=1.3rc0",
+  "earthkit-meteo>=1rc0",
+  "earthkit-plots>=1rc0",
+  "earthkit-transforms>=1rc0",
+  "earthkit-utils>=1rc0",
 ]
 optional-dependencies.test = [ "pytest", "pytest-forked" ]
 urls.Documentation = "https://earthkit.readthedocs.io/"
