@@ -21,4 +21,3 @@ Install **earthkit** with python3 (>= 3.10) and ``pip`` as follows (specific to 
 ..     conda install earthkit -c conda-forge
 
 .. This will bring in some necessary binary dependencies for you.
-
