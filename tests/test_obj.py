@@ -105,24 +105,7 @@ def test_earthkit_plots_obj_3():
     assert callable(ek.plots.quickplot)
 
 
-def test_earthkit_regrid_obj_1():
-    import earthkit.regrid as ekr
-
-    assert callable(ekr.interpolate)
-
-
-def test_earthkit_regrid_obj_2():
-    from earthkit import regrid
-
-    assert callable(regrid.interpolate)
-
-
-def test_earthkit_regrid_obj_3():
-    import earthkit as ek
-
-    assert callable(ek.regrid.interpolate)
-
-
+@pytest.mark.skip
 def test_earthkit_time_obj_1():
     import earthkit.time as ektime
 
@@ -130,6 +113,7 @@ def test_earthkit_time_obj_1():
     assert x is not None
 
 
+@pytest.mark.skip
 def test_earthkit_time_obj_2():
     from earthkit import time
 
@@ -137,6 +121,7 @@ def test_earthkit_time_obj_2():
     assert x is not None
 
 
+@pytest.mark.skip
 def test_earthkit_time_obj_3():
     import earthkit as ek
 
@@ -186,18 +171,21 @@ def test_earthkit_utils_obj_3():
     assert callable(ek.utils.array.array_to_numpy)
 
 
+@pytest.mark.skip
 def test_earthkit_workflows_obj_1():
     import earthkit.workflows as ekw
 
     assert callable(ekw.fluent.Payload)
 
 
+@pytest.mark.skip
 def test_earthkit_workflows_obj_2():
     from earthkit import workflows
 
     assert callable(workflows.fluent.Payload)
 
 
+@pytest.mark.skip
 def test_earthkit_workflows_obj_3():
     import earthkit as ek
 

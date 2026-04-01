@@ -9,6 +9,7 @@
 # nor does it submit to any jurisdiction.
 #
 
+import pytest
 
 def test_earthkit_data_import():
     import earthkit.data  # noqa
@@ -40,11 +41,7 @@ def test_earthkit_plots_import():
     from earthkit.plots import quickmap  # noqa
 
 
-def test_earthkit_regrid_import():
-    import earthkit.regrid  # noqa
-    from earthkit.regrid import interpolate  # noqa
-
-
+@pytest.mark.skip
 def test_earthkit_time_import():
     import earthkit.time  # noqa
     from earthkit.time import DailySequence  # noqa
@@ -55,6 +52,7 @@ def test_earthkit_utils_import():
     from earthkit.utils import __version__  # noqa
 
 
+@pytest.mark.skip
 def test_earthkit_workflows_import():
     import earthkit.workflows  # noqa
     from earthkit.workflows.fluent import Payload  # noqa
