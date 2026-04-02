@@ -11,6 +11,7 @@
 
 import pytest
 
+
 def test_earthkit_data_import():
     import earthkit.data  # noqa
     from earthkit.data import from_source  # noqa
