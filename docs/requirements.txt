@@ -8,3 +8,10 @@ furo
 nbsphinx
 setuptools
 pyyaml
+earthkit-data @ git+https://github.com/ecmwf/earthkit-data@develop
+earthkit-geo @ git+https://github.com/ecmwf/earthkit-geo@develop
+earthkit-utils @ git+https://github.com/ecmwf/earthkit-utils@develop
+earthkit-transforms @ git+https://github.com/ecmwf/earthkit-transforms@develop
+earthkit-plots @ git+https://github.com/ecmwf/earthkit-plots@develop
+earthkit-hydro @ git+https://github.com/ecmwf/earthkit-hydro@develop
+earthkit-meteo @ git+https://github.com/ecmwf/earthkit-meteo@develop
