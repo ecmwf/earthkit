@@ -13,7 +13,6 @@ Development guide
 
    guidelines
    setup
-   conda
    tests
    docs
 
