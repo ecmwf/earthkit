@@ -35,8 +35,6 @@ Install from PyPI:
 pip install earthkit
 ```
 
-More details can be found at https://earthkit.readthedocs.io/en/latest/install.html.
-
 ## Licence
 
 ```
