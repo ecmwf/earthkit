@@ -34,7 +34,7 @@ dependencies = [
   "earthkit-hydro>=1.3rc0",
   "earthkit-meteo>=1rc0",
   "earthkit-plots>=1rc0",
-  "earthkit-transforms>=1rc0",
+  "earthkit-transforms>=1rc2",
   "earthkit-utils>=1rc0",
 ]
 optional-dependencies.test = [ "pytest", "pytest-forked" ]
