@@ -74,14 +74,6 @@ Have a feature request or found a bug? Feel free to open an
    development/index
 
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Installation and Getting Started
-   :titlesonly:
-   :hidden:
-
-   getting-started
-
 
 .. toctree::
    :maxdepth: 2

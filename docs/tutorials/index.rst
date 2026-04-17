@@ -10,7 +10,10 @@ Here is a list of small tutorial notebooks to illustrate how to use earthkit.
     :maxdepth: 1
 
     ensemble.ipynb
+    comparing-models-solutions
+    grid_solutions
+    meteo_solutions
+    time-series-solutions
+    gpu_hydro
     polytope_polygon.ipynb
-    polytope_polygon_logo.ipynb
     polytope_timeseries.ipynb
-    polytope_vertical_profile.ipynb

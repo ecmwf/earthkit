@@ -20,6 +20,13 @@ Next, create your Python virtual environment and activate it. E.g. assuming your
    python -m venv earthkit-dev
    source earthkit-dev/bin/activate
 
+If you use `conda`, the equivalent would be:
+
+.. code-block:: shell
+
+   conda create -n earthkit-dev python=3.12
+   conda activate earthkit-dev
+
 
 Next, install your repo with the development dependencies in editable mode by running the following commands from the root of the repository:
 
