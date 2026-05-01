@@ -19,7 +19,7 @@ def test_earthkit_data_import():
 
 def test_earthkit_geo_import():
     import earthkit.geo  # noqa
-    from earthkit.geo import nearest_point_kdtree  # noqa
+    from earthkit.geo import regrid  # noqa
 
 
 def test_earthkit_transforms_import():

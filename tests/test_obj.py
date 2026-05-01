@@ -27,13 +27,13 @@ def test_earthkit_data_obj_2():
 def test_earthkit_geo_obj_1():
     import earthkit.geo as ekg
 
-    assert callable(ekg.nearest_point_kdtree)
+    assert callable(ekg.regrid)
 
 
 def test_earthkit_geo_obj_2():
     from earthkit import geo
 
-    assert callable(geo.nearest_point_kdtree)
+    assert callable(geo.regrid)
 
 
 def test_earthkit_hydro_obj_1():
