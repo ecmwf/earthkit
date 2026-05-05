@@ -33,7 +33,7 @@ dependencies = [
   "earthkit-geo[all]>=1rc7",
   "earthkit-hydro>=1.3rc1",
   "earthkit-meteo>=1rc3",
-  "earthkit-plots>=1rc5",
+  "earthkit-plots>=1rc7",
   "earthkit-transforms>=1rc2",
   "earthkit-utils>=1rc1",
 ]
