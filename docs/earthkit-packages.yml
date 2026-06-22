@@ -15,3 +15,5 @@ packages:
   url: https://earthkit-plots.readthedocs.io/en/latest
 - name: earthkit-transforms
   url: https://earthkit-transforms.readthedocs.io/en/latest
+- name: earthkit-utils
+  url: https://earthkit-utils.readthedocs.io/en/latest
