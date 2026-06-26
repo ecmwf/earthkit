@@ -94,10 +94,6 @@ xref_links = {
         "earthkit-hydro",
         "https://earthkit-hydro.readthedocs.io",
     ),
-    "earthkit-workflows": (
-        "earthkit-workflows",
-        "https://github.com/ecmwf/earthkit-workflows/blob/develop/readme.md",
-    ),
     "eccodes": (
         "ecCodes",
         "https://confluence.ecmwf.int/display/ECC/ecCodes+Home",
