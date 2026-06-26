@@ -31,8 +31,7 @@ dependencies = [
   "earthkit-regrid>=0.5.0",
   "earthkit-time>=0.1.7",
   "earthkit-transforms>=0.5.4,<0.99",
-  "earthkit-utils>=0.1.2,<0.99",
-  "earthkit-workflows>=0.4.7,<0.99"
+  "earthkit-utils>=0.1.2,<0.99"
 ]
 description = "Toolkit for earth science workflows"
 dynamic = ["version"]
