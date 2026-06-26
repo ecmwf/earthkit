@@ -1,16 +1,10 @@
 [build-system]
-requires = [ "setuptools>=61", "setuptools-scm>=8" ]
+requires = ["setuptools>=61", "setuptools-scm>=8"]
 
 [project]
-name = "earthkit"
-description = "Toolkit for earth science workflows"
-readme = "README.md"
-license = { text = "Apache License Version 2.0" }
 authors = [
-  { name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int" },
+  {name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int"}
 ]
-requires-python = ">=3.9"
-
 classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
@@ -26,41 +20,46 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
-  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering"
 ]
-dynamic = [ "version" ]
 dependencies = [
   "earthkit-data[all]>=0.17",
-  "earthkit-geo[all]>=0.4",
-  "earthkit-hydro>=1",
-  "earthkit-meteo>=0.4.1",
-  "earthkit-plots>=0.5.1",
+  "earthkit-geo[all]>=0.99",
+  "earthkit-hydro<1.3",
+  "earthkit-meteo>=0.6.99",
+  "earthkit-plots>=0.6.99",
   "earthkit-regrid>=0.5",
   "earthkit-time>=0.1.7",
-  "earthkit-transforms>=0.5",
-  "earthkit-utils>=0.1.2",
-  "earthkit-workflows>=0.4.7",
+  "earthkit-transforms>=0.5.99",
+  "earthkit-utils>=0.3.99",
+  "earthkit-workflows>=0.4.99"
 ]
-optional-dependencies.test = [ "pytest", "pytest-forked" ]
+description = "Toolkit for earth science workflows"
+dynamic = ["version"]
+license = {text = "Apache License Version 2.0"}
+name = "earthkit"
+readme = "README.md"
+requires-python = ">=3.9"
+optional-dependencies.test = ["pytest", "pytest-forked"]
 urls.Documentation = "https://earthkit.readthedocs.io/"
 urls.Homepage = "https://github.com/ecmwf/earthkit/"
 urls.Issues = "https://github.com/ecmwf/earthkit.issues"
 urls.Repository = "https://github.com/ecmwf/earthkit/"
 
-[tool.setuptools.packages.find]
-include = [ "earthkit", "earthkit.*" ]
-where = [ "src/" ]
-
-[tool.setuptools_scm]
-version_file = "src/earthkit/_version.py"
-local_scheme = "no-local-version"
+[tool.coverage.run]
+branch = "true"
 
 [tool.isort]
 profile = "black"
 
-[tool.coverage.run]
-branch = "true"
-
 [tool.pydocstyle]
-add_ignore = [ "D1", "D200", "D205", "D400", "D401" ]
+add_ignore = ["D1", "D200", "D205", "D400", "D401"]
 convention = "numpy"
+
+[tool.setuptools.packages.find]
+include = ["earthkit", "earthkit.*"]
+where = ["src/"]
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+version_file = "src/earthkit/_version.py"
