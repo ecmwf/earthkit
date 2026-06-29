@@ -1,17 +1,10 @@
 [build-system]
-requires = [ "setuptools>=77", "setuptools-scm[toml]>=8" ]
+requires = ["setuptools>=77", "setuptools-scm[toml]>=8"]
 
 [project]
-name = "earthkit"
-description = "Toolkit for earth science workflows"
-readme = "README.md"
-license = "Apache-2.0"
-license-files = [ "LICENSE" ]
 authors = [
-  { name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int" },
+  {name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int"}
 ]
-requires-python = ">=3.10"
-
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
@@ -25,9 +18,8 @@ classifiers = [
   "Programming Language :: Python :: 3.14",
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
-  "Topic :: Scientific/Engineering",
+  "Topic :: Scientific/Engineering"
 ]
-dynamic = [ "version" ]
 dependencies = [
   "earthkit-data[all]~=1.0",
   "earthkit-geo[all]~=1.0",
@@ -35,27 +27,34 @@ dependencies = [
   "earthkit-meteo~=1.0",
   "earthkit-plots~=1.0",
   "earthkit-transforms~=1.0",
-  "earthkit-utils~=1.0",
+  "earthkit-utils~=1.0"
 ]
-optional-dependencies.test = [ "pytest", "pytest-forked" ]
+description = "Toolkit for earth science workflows"
+dynamic = ["version"]
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+name = "earthkit"
+readme = "README.md"
+requires-python = ">=3.10"
+optional-dependencies.test = ["pytest", "pytest-forked"]
 urls.Documentation = "https://earthkit.readthedocs.io/"
 urls.Homepage = "https://github.com/ecmwf/earthkit/"
 urls.Issues = "https://github.com/ecmwf/earthkit.issues"
 urls.Repository = "https://github.com/ecmwf/earthkit/"
 
-[tool.setuptools]
-packages = [  ]
-
-[tool.setuptools_scm]
-version_file = "src/earthkit/_version.py"
-local_scheme = "no-local-version"
+[tool.coverage.run]
+branch = "true"
 
 [tool.isort]
 profile = "black"
 
-[tool.coverage.run]
-branch = "true"
-
 [tool.pydocstyle]
-add_ignore = [ "D1", "D200", "D205", "D400", "D401" ]
+add_ignore = ["D1", "D200", "D205", "D400", "D401"]
 convention = "numpy"
+
+[tool.setuptools]
+packages = []
+
+[tool.setuptools_scm]
+local_scheme = "no-local-version"
+version_file = "src/earthkit/_version.py"

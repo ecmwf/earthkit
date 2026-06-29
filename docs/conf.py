@@ -30,7 +30,9 @@ if rtd_version_type in ("branch", "tag"):
 else:
     source_branch = "main"
 
-src_path = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src"))
+src_path = os.path.normpath(
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "src")
+)
 sys.path.insert(0, src_path)
 
 # Adds path to the folder _ext, where extensions are stored
@@ -126,11 +128,19 @@ templates_path = ["_templates"]
 # clean_autodocs.py feature flags
 # Set to False/None to disable or soften the corresponding processing step.
 autodocs_delete_hidden = True  # delete RST files for private/hidden modules
-autodocs_replace_automodule = True  # replace automodule directives with autosummary tables
-autodocs_short_display_names = True  # shorten toctree labels to the last module component
-autodocs_top_level_maxdepth = 1  # :maxdepth: on top-level page (None = keep sphinx-apidoc value)
+autodocs_replace_automodule = (
+    True  # replace automodule directives with autosummary tables
+)
+autodocs_short_display_names = (
+    True  # shorten toctree labels to the last module component
+)
+autodocs_top_level_maxdepth = (
+    1  # :maxdepth: on top-level page (None = keep sphinx-apidoc value)
+)
 autodocs_rename_titles = False  # strip " package"/" module" from RST page headings
-autodocs_top_level_title = "API Reference"  # top-level page heading (used when rename_titles=True)
+autodocs_top_level_title = (
+    "API Reference"  # top-level page heading (used when rename_titles=True)
+)
 autodocs_titlesonly = False  # inject :titlesonly: into toctree directives
 
 # List of patterns, relative to source directory, that match files and
