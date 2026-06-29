@@ -17,3 +17,4 @@ Here is a list of small tutorial notebooks to illustrate how to use earthkit.
     gpu_hydro
     polytope_polygon.ipynb
     polytope_timeseries.ipynb
+    meteo-geo-temporal-analysis-analysis
