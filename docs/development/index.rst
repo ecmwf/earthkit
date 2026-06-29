@@ -12,9 +12,7 @@ Development guide
    :maxdepth: 1
 
    guidelines
-   setup
-   tests
-   docs
+
 
 
 
