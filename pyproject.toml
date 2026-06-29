@@ -1,18 +1,16 @@
 [build-system]
-requires = ["setuptools>=61", "setuptools-scm>=8"]
+requires = ["setuptools>=77", "setuptools-scm[toml]>=8"]
 
 [project]
 authors = [
   {name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int"}
 ]
 classifiers = [
-  "Development Status :: 4 - Beta",
+  "Development Status :: 5 - Production/Stable",
   "Intended Audience :: Developers",
   "Intended Audience :: Science/Research",
-  "License :: OSI Approved :: Apache Software License",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3 :: Only",
-  "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
@@ -23,22 +21,21 @@ classifiers = [
   "Topic :: Scientific/Engineering"
 ]
 dependencies = [
-  "earthkit-data[all]>=0.20,==0.*",
-  "earthkit-geo[all]>=0.5,==0.*",
-  "earthkit-hydro<1.3",
-  "earthkit-meteo>=0.6.2,==0.*",
-  "earthkit-plots>=0.6.1,==0.*",
-  "earthkit-regrid>=0.5.0,==0.*",
-  "earthkit-time>=0.1.7,==0.*",
-  "earthkit-transforms>=0.5.4,==0.*",
-  "earthkit-utils>=0.1.2,==0.*"
+  "earthkit-data[all]~=1.0",
+  "earthkit-geo[all]~=1.0",
+  "earthkit-hydro~=1.3",
+  "earthkit-meteo~=1.0",
+  "earthkit-plots~=1.0",
+  "earthkit-transforms~=1.0",
+  "earthkit-utils~=1.0"
 ]
 description = "Toolkit for earth science workflows"
 dynamic = ["version"]
-license = {text = "Apache License Version 2.0"}
+license = "Apache-2.0"
+license-files = ["LICENSE"]
 name = "earthkit"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 optional-dependencies.test = ["pytest", "pytest-forked"]
 urls.Documentation = "https://earthkit.readthedocs.io/"
 urls.Homepage = "https://github.com/ecmwf/earthkit/"
@@ -55,9 +52,8 @@ profile = "black"
 add_ignore = ["D1", "D200", "D205", "D400", "D401"]
 convention = "numpy"
 
-[tool.setuptools.packages.find]
-include = ["earthkit", "earthkit.*"]
-where = ["src/"]
+[tool.setuptools]
+packages = []
 
 [tool.setuptools_scm]
 local_scheme = "no-local-version"

@@ -1,8 +1,10 @@
-# These are the requirements for readthedoc
+# These are the requirements for readthedocs
 ipykernel
 docutils
 Pygments>=2.6.1
 Sphinx>=7.3.7
-sphinx-rtd-theme
+sphinx_design
+furo
 nbsphinx
 setuptools
+pyyaml
