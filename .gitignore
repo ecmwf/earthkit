@@ -78,6 +78,11 @@ docs/examples/*.tar
 docs/examples/*.zip
 docs/examples/*.grib
 docs/examples/_*
+docs/tutorials/*.tar
+docs/tutorials/*.zip
+docs/tutorials/*.grib
+docs/tutorials/_*
+
 
 # PyBuilder
 target/

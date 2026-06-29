@@ -11,8 +11,8 @@ Here is a list of small tutorial notebooks to illustrate how to use earthkit.
 
     ensemble.ipynb
     comparing-models-solutions
-    grid_solutions
-    meteo_solutions
+    grid_explorer
+    meteo_computations
     time-series-solutions
     gpu_hydro
     polytope_polygon.ipynb
