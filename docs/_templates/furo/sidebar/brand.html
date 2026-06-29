@@ -1,0 +1,14 @@
+{# Override Furo's sidebar brand to show logo + package selector mount point #}
+<a class="sidebar-brand" href="{{ pathto(master_doc) }}">
+  <div class="sidebar-logo-container">
+    {% if theme_light_logo %}
+      <img class="sidebar-logo only-light" src="{{ pathto('_static/' ~ theme_light_logo, 1) }}" alt="{{ project }}" />
+    {% endif %}
+    {% if theme_dark_logo %}
+      <img class="sidebar-logo only-dark" src="{{ pathto('_static/' ~ theme_dark_logo, 1) }}" alt="{{ project }}" />
+    {% elif theme_light_logo %}
+      <img class="sidebar-logo only-dark" src="{{ pathto('_static/' ~ theme_light_logo, 1) }}" alt="{{ project }}" />
+    {% endif %}
+  </div>
+</a>
+<div id="ek-project-selector-mount" class="ek-project-selector-brand"></div>

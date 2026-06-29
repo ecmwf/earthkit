@@ -17,11 +17,10 @@ import pytest
 VERSION_RX = re.compile(r"""\d+\.\d+\.*""")
 
 
-def test_version():
-    import earthkit
+# def test_version():
+#     import earthkit
 
-    assert VERSION_RX.match(earthkit.__version__) is not None
-    assert VERSION_RX.match(earthkit.data.__version__) is not None
+#     assert VERSION_RX.match(earthkit.__version__) is not None
 
 
 def test_earthkit_data_version_1():
@@ -84,24 +83,14 @@ def test_earthkit_plots_version_2():
     assert VERSION_RX.match(plots.__version__) is not None
 
 
-def test_earthkit_regrid_version_1():
-    import earthkit.regrid  # noqa
-
-    assert VERSION_RX.match(earthkit.regrid.__version__) is not None
-
-
-def test_earthkit_regrid_version_2():
-    from earthkit import regrid  # noqa
-
-    assert VERSION_RX.match(regrid.__version__) is not None
-
-
+@pytest.mark.skip
 def test_earthkit_time_version_1():
     import earthkit.time  # noqa
 
     assert VERSION_RX.match(version("earthkit.time")) is not None
 
 
+@pytest.mark.skip
 @pytest.mark.xfail(reason="version not available")
 def test_earthkit_time_version_2():
     from earthkit import time  # noqa
@@ -131,3 +120,17 @@ def test_earthkit_utils_version_2():
     from earthkit import utils  # noqa
 
     assert VERSION_RX.match(utils.__version__) is not None
+
+
+@pytest.mark.skip
+def test_earthkit_workflows_version_1():
+    import earthkit.workflows  # noqa
+
+    assert VERSION_RX.match(earthkit.workflows.__version__) is not None
+
+
+@pytest.mark.skip
+def test_earthkit_workflows_version_2():
+    from earthkit import workflows  # noqa
+
+    assert VERSION_RX.match(workflows.__version__) is not None

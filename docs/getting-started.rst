@@ -1,5 +1,5 @@
-Installation
-============
+Installation and Getting Started
+================================
 
 .. note::
 
@@ -8,7 +8,7 @@ Installation
 Installing earthkit
 ----------------------------
 
-Install **earthkit** with python3 (>= 3.8) and ``pip`` as follows:
+Install the latest version of **earthkit** with python3 (>= 3.10) and ``pip`` as follows:
 
 .. code-block:: bash
 
@@ -21,10 +21,3 @@ Install **earthkit** with python3 (>= 3.8) and ``pip`` as follows:
 ..     conda install earthkit -c conda-forge
 
 .. This will bring in some necessary binary dependencies for you.
-
-Installing the binary dependencies
---------------------------------------
-
-This is the list of components with binary dependencies. Please click on the links to see the installation instructions.
-
--  `eartkit-data <https://earthkit-data.readthedocs.io/en/latest/install.html#installing-the-binary-dependencies>`_
