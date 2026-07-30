@@ -4,6 +4,7 @@ Contributing
 **earthkit** is an open-source project, and contributions are highly welcomed and appreciated for all components.
 
 The code is hosted on GitHub:
+
 - `earthkit <https://github.com/ecmwf/earthkit>`_
 - `earthkit-data <https://github.com/ecmwf/earthkit-data>`_
 - `earthkit-plots <https://github.com/ecmwf/earthkit-plots>`_

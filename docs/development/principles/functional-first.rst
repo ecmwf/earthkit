@@ -1,4 +1,4 @@
-Functional-first design
+Functional-first Design
 =======================
 
 earthkit follows a functional-first design approach. Functionality should

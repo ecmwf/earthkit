@@ -1,4 +1,4 @@
-Naming conventions
+Naming Conventions
 ==================
 
 Consistent naming is important for making earthkit APIs predictable and

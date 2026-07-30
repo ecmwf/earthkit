@@ -7,6 +7,7 @@ earthkit is not an attempt to reinvent the wheel and retaining interoperability 
 ---------------------------------------------
 
 earthkit aims to integrate naturally with the wider Scientific Python ecosystem. The primary supported data types are:
+
 - xarray
 - Array API-compatible arrays (e.g. NumPy, CuPy, PyTorch)
 - pandas
@@ -43,6 +44,8 @@ The backend implementations live in the corresponding submodules::
         # array-api compat logic
         return xp.vector_norm((a-b), ord=2)
 
+
+
     # earthkit.foo.xarray
 
     def bar(a, b):
@@ -55,6 +58,10 @@ The backend implementations live in the corresponding submodules::
 This structure keeps the public API independent of the supported input types,
 avoids unnecessary data conversion, and makes it straightforward to add support
 for additional backends.
+
+.. important::
+
+    Dispatching and array-api compat both rely on being able to detect the desired backend from inputs. This is not always possible. Numpy is preferred when array-api compat is infeasible, and xarray is preferred for the toplevel function when dispatching is infeasible.
 
 2. Interoperability between earthkit packages
 ---------------------------------------------

@@ -50,25 +50,25 @@ Writing examples
 - Tutorial (first lines):
 
   "This tutorial shows how to load a precomputed EFAS river network and
-  compute catchment areas. By the end you'll have a CSV of catchment stats."
+  compute catchment statistics."
 
 - How-to (first lines):
 
-  "How to compute upstream accumulation for a field of ones to get upstream
-  cell counts. Code:
+  "How to load a GRIB file as an xarray Dataset. Code:"
 
   .. code-block:: python
 
-     import numpy as np
-     import earthkit.hydro as ekh
+    import earthkit.data as ekd
 
-     network = ekh.river_network.load('efas', '5')
-     counts = ekh.upstream.sum(network, np.ones(network.n_nodes))"
+    data = ekd.from_source("file", "temperature.grib")
+    ds = data.to_xarray()
 
 - Concepts (first lines):
 
-  "Distance vs length: distances are edge costs; lengths are node extents.
-  This difference matters at confluences where multiple edges meet a node."
+  "What is a forecast step? Forecast data has both a reference time and a
+forecast step. The valid time is the sum of these two quantities. This
+page explains the relationship between reference time, step and valid
+time, and why they are represented separately."
 
 Keeping documentation high quality
 ----------------------------------

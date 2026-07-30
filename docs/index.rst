@@ -72,7 +72,7 @@ Have a feature request or found a bug? Feel free to open an
    :hidden:
 
    development/contributing
-   development/principles
+   development/principles/index
    development/documentation
 
 
