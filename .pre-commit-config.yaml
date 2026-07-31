@@ -1,32 +1,30 @@
+default_language_version:
+  python: python3
+default_stages:
+- pre-commit
+- pre-push
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
   rev: v6.0.0
   hooks:
-  - id: trailing-whitespace     # Trailing whitespace checker
-  - id: end-of-file-fixer     # Ensure files end in a newline
-  - id: check-json
-  - id: check-yaml     # Check YAML files for syntax errors only
-    args: [--unsafe, --allow-multiple-documents]
-  - id: check-toml
-          # - id: check-added-large-files
-  - id: debug-statements     # Check for debugger imports and py37+ breakpoint()
+  - id: detect-private-key
+  - id: check-ast
+  - id: end-of-file-fixer
   - id: mixed-line-ending
-  - id: no-commit-to-branch     # Prevent committing to main / master
-  - id: check-merge-conflict     # Check for files that contain merge conflict
-    exclude: /README\.rst$|^docs/.*\.rst$
+    args: [--fix=lf]
+  - id: trailing-whitespace
+  - id: check-case-conflict
 - repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.15.9
+  rev: v0.15.4
   hooks:
   - id: ruff-check
+    exclude: '(dev/.*|.*_)\.py$'
     args:
+    - --line-length=120
     - --fix
     - --exit-non-zero-on-fix
+    - --preview
   - id: ruff-format
-- repo: https://github.com/executablebooks/mdformat
-  rev: 0.7.14
-  hooks:
-  - id: mdformat
-    exclude: cruft-update-template.md
 - repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
   rev: v2.16.0
   hooks:
@@ -34,7 +32,12 @@ repos:
     args: [--autofix, --preserve-quotes]
   - id: pretty-format-toml
     args: [--autofix]
-- repo: https://github.com/sphinx-contrib/sphinx-lint
-  rev: v1.0.0
+- repo: local
   hooks:
-  - id: sphinx-lint
+  - id: forbid-to-commit
+    name: Don't commit rej files
+    entry: |
+      Cannot commit .rej files. These indicate merge conflicts that arise during automated template updates.
+      Fix the merge conflicts manually and remove the .rej files.
+    language: fail
+    files: '.*\.rej$'
