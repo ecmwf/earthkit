@@ -45,6 +45,10 @@ urls.Repository = "https://github.com/ecmwf/earthkit/"
 [tool.coverage.run]
 branch = "true"
 
+[tool.pydocstyle]
+add_ignore = ["D1", "D200", "D205", "D400", "D401"]
+convention = "numpy"
+
 [tool.ruff]
 line-length = 120
 preview = true
@@ -71,10 +75,6 @@ select = [
   "I",  # isort
   "D"  # pydocstyle
 ]
-
-[tool.pydocstyle]
-add_ignore = ["D1", "D200", "D205", "D400", "D401"]
-convention = "numpy"
 
 [tool.setuptools]
 packages = []
