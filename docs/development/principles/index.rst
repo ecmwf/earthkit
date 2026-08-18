@@ -13,3 +13,4 @@ earthkit-specific principles are also laid out here and take precedence.
    naming
    which-package
    functional-first
+   dependencies
