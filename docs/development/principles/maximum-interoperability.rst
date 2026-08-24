@@ -57,7 +57,9 @@ The backend implementations live in the corresponding submodules::
 
 This structure keeps the public API independent of the supported input types,
 avoids unnecessary data conversion, and makes it straightforward to add support
-for additional backends.
+for additional backends. Read :doc:`one-ground-truth` for guidance regarding how to
+handle multiple implementations with minimal maintenance burden e.g. xarray and array
+above.
 
 .. important::
 

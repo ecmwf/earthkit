@@ -10,7 +10,9 @@ earthkit-specific principles are also laid out here and take precedence.
    :maxdepth: 2
 
    maximum-interoperability
+   one-ground-truth
    naming
    which-package
    functional-first
    dependencies
+   missing-values
