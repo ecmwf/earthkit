@@ -20,7 +20,7 @@ A minimal made-up example implementing MSE as a function earthkit.foo.bar with x
 
     # earthkit.foo
 
-    from earthkit.utils.dispatch import dispatch
+    from earthkit.utils.decorators import dispatch
 
     def bar(a, b):
         """
