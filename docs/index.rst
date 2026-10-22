@@ -41,8 +41,8 @@ and climate science workflows by simplifying data access, processing, analysis, 
 
       Step-by-step guides to learn earthkit.
 
-We plan to add many more examples of using Earthkit as a complete package to these pages. In the meantime, we invite you to look at
-the documentation for the component Earthkit packages via the navigation drop-down on the left.
+We plan to add many more examples of using earthkit as a complete package to these pages. In the meantime, we invite you to look at
+the documentation for the component earthkit packages via the navigation drop-down on the left.
 
 
 **Support**
@@ -50,7 +50,11 @@ the documentation for the component Earthkit packages via the navigation drop-do
 Have a feature request or found a bug? Feel free to open an
 `issue <https://github.com/ecmwf/earthkit/issues/new/choose>`_.
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
 
+   why
 
 .. toctree::
    :caption: User guide
@@ -67,8 +71,9 @@ Have a feature request or found a bug? Feel free to open an
    :caption: Developer guide
    :hidden:
 
-   development/index
-
+   development/contributing
+   development/principles/index
+   development/documentation
 
 
 .. toctree::
