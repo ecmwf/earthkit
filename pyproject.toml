@@ -3,7 +3,7 @@ requires = ["setuptools>=77", "setuptools-scm[toml]>=8"]
 
 [project]
 authors = [
-  {name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int"}
+  { name = "European Centre for Medium-Range Weather Forecasts (ECMWF)", email = "software.support@ecmwf.int" }
 ]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
@@ -34,9 +34,9 @@ dynamic = ["version"]
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 name = "earthkit"
+optional-dependencies.test = ["pytest", "pytest-forked"]
 readme = "README.md"
 requires-python = ">=3.10"
-optional-dependencies.test = ["pytest", "pytest-forked"]
 urls.Documentation = "https://earthkit.readthedocs.io/"
 urls.Homepage = "https://github.com/ecmwf/earthkit/"
 urls.Issues = "https://github.com/ecmwf/earthkit.issues"
