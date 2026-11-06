@@ -10,6 +10,5 @@ build:
   - ecmwf/earthkit-hydro@develop
   - ecmwf/earthkit-data@develop
   - ecmwf/earthkit-meteo@develop
-pytest_cmd: |
+  pytest_cmd: |
     FINDLIBS_DISABLE_PACKAGE=no python -m pytest --forked -vv --cov=. --cov-report=html
-    
