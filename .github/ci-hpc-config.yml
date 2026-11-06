@@ -3,13 +3,6 @@ build:
   parallel: 1
   modules:
   - ninja
-  dependencies:
-  - ecmwf/ecbuild@develop
-  - MathisRosenhauer/libaec@refs/tags/v1.1.3
-  - ecmwf/eccodes@develop
-  - ecmwf/eckit@develop
-  - ecmwf/odc@develop
-  - ecmwf/metkit@develop
   python_dependencies:
   - ecmwf/eccodes-python@develop
   - ecmwf/pyodc@develop
@@ -17,6 +10,5 @@ build:
   - ecmwf/earthkit-hydro@develop
   - ecmwf/earthkit-data@develop
   - ecmwf/earthkit-meteo@develop
-  env:
-  - ECCODES_SAMPLES_PATH=$ECCODES_DIR/share/eccodes/samples
-  - ECCODES_DEFINITION_PATH=$ECCODES_DIR/share/eccodes/definitions
+  pytest_cmd: |
+    FINDLIBS_DISABLE_PACKAGE=no python -m pytest --forked -vv --cov=. --cov-report=html
