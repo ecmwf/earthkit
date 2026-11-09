@@ -11,7 +11,7 @@ earthkit uses the Diátaxis framework, which organises documentation into four c
 In addition to these standard Diátaxis types, earthkit also two additional sections in the User Guide.
 
 - Installation and Getting Started - a quick way to get up and running.
-- Frequently Asked Questions - common questions with short answers
+- Frequently Asked Questions - common questions with short answers.
 
 Where to place content
 ----------------------
@@ -21,7 +21,7 @@ Where to place content
 - Tutorials: put hands-on, example-driven content.
   Preface with a clear goal, required inputs, and a short worked example.
 
-- How-to Guides: add focused recipes`. Keep them
+- How-to Guides: add focused recipes. Keep them
   concise and task-oriented; show the recipe first, then explain options.
 
 - Concepts: add design rationale and conceptual material. These pages are for readers who want
@@ -66,9 +66,9 @@ Writing examples
 - Concepts (first lines):
 
   "What is a forecast step? Forecast data has both a reference time and a
-forecast step. The valid time is the sum of these two quantities. This
-page explains the relationship between reference time, step and valid
-time, and why they are represented separately."
+  forecast step. The valid time is the sum of these two quantities. This
+  page explains the relationship between reference time, step and valid
+  time, and why they are represented separately."
 
 Keeping documentation high quality
 ----------------------------------

@@ -6,7 +6,7 @@ easy to discover. Names should follow these principles:
 
 * Use British English spelling.
 * Prefer descriptive names that clearly communicate the purpose of a function,
-  class, or module. Variables or function arguments can be shorted.
+  class, or module. Variables or function arguments can be shorter.
 * Follow existing earthkit naming conventions rather than introducing new
   patterns. If a convention is problematic, suggest changing it.
 * Use terminology that is consistent with the wider scientific Python
@@ -25,5 +25,5 @@ across modules.
 earthkit vs Earthkit
 --------------------
 
-In general, earthkit is lower caps when mentioning the repositories and software packages.
+In general, earthkit is lower case when mentioning the repositories and software packages.
 It is capitalised when mentioning the project.

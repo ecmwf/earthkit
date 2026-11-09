@@ -27,6 +27,8 @@ Development workflow
 7. Push your changes to your fork on GitHub
 8. Open a pull request against the develop branch of the repository
 
+A more detailed guide to this workflow is in the `ECMWF software development codex <https://github.com/ecmwf/codex/blob/main/Guidelines/External-Contributions.md>`_.
+
 Code style
 ----------
 This project uses ruff for code styling and formatting. To handle these automatically, you can use pre-commit hooks. To set them up, run:
