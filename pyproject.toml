@@ -21,13 +21,13 @@ classifiers = [
   "Topic :: Scientific/Engineering"
 ]
 dependencies = [
-  "earthkit-data[all]~=1.0",
-  "earthkit-geo[all]~=1.0",
+  "earthkit-data[all] @ git+https://github.com/ecmwf/earthkit-data@feature/cli",
+  "earthkit-geo[all] @ git+https://github.com/ecmwf/earthkit-geo@feature/cli",
   "earthkit-hydro~=1.3",
   "earthkit-meteo~=1.0",
-  "earthkit-plots~=1.0",
-  "earthkit-transforms~=1.0",
-  "earthkit-utils~=1.0"
+  "earthkit-plots @ git+https://github.com/ecmwf/earthkit-plots@feature/cli",
+  "earthkit-transforms @ git+https://github.com/ecmwf/earthkit-transforms@feature/cli",
+  "earthkit-utils @ git+https://github.com/ecmwf/earthkit-utils@feature/cli"
 ]
 description = "Toolkit for earth science workflows"
 dynamic = ["version"]
