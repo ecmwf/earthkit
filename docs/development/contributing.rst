@@ -40,11 +40,13 @@ This project uses ruff for code styling and formatting. To handle these automati
 
 Testing
 -------
-To run the tests, you can use pytest. Make sure you have all dependencies installed, then simply run:
+To run the tests, you can use pytest. Make sure you have all dependencies installed, and then generally you can simply run:
 
 .. code-block:: bash
 
     pytest
+
+For package-specific test instructions, please refer to the individual package's testing documentation.
 
 Documentation
 -------------
