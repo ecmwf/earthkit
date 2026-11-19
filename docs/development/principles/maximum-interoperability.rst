@@ -8,10 +8,10 @@ earthkit is not an attempt to reinvent the wheel and retaining interoperability 
 
 earthkit aims to integrate naturally with the wider Scientific Python ecosystem. The primary supported data types are:
 
-- xarray
+- xarray DataArrays and Datasets
 - Array API-compatible arrays (e.g. NumPy, CuPy, PyTorch)
-- pandas
-- earthkit-data objects
+- pandas DataFrames
+- earthkit-data Fields and FieldLists
 
 The public function should contain only dispatch logic. Each backend should
 implement the same function with the same signature and semantics.
