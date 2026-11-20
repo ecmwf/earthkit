@@ -15,7 +15,7 @@ over stateful objects that hide operations behind methods::
 
 Functions should:
 
-* have explicit inputs and outputs i.e. avoid `**kwargs`
+* have well-documented inputs and outputs e.g. avoid bare `**kwargs` where possible
 * avoid unnecessary mutable state
 * be easy to compose with other functions
 * work naturally with different supported data types
