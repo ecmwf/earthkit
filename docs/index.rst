@@ -58,6 +58,7 @@ Have a feature request or found a bug? Feel free to open an
    :hidden:
 
    getting-started
+   cli
    tutorials/index
 
 
