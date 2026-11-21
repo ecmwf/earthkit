@@ -1,7 +1,6 @@
 Why earthkit?
 =============
 
-
 **earthkit** offers **multiple interoperable** :ref:`software components <components>` built on top of
 well-established open-source Python libraries like numpy, pandas and matplotlib. earthkit also integrates
 and leverages the robust and operations-ready software stack that is familiar to ECMWF production systems
