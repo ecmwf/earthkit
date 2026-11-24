@@ -30,6 +30,8 @@ repos:
   hooks:
   - id: pretty-format-yaml
     args: [--autofix, --preserve-quotes]
+    # Written by the ci-infrastructure regenerator, which would undo the formatting.
+    exclude: ^\.github/workflows/(ci|ci-fork|cross-repo-trigger.*|trigger-downstream.*|pr-label-.*|pr-sync-branch|retry-nightly)\.yml$
   - id: pretty-format-toml
     args: [--autofix]
 - repo: local
