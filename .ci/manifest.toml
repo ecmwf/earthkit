@@ -1,0 +1,87 @@
+[[deps]]
+compiler-inputs = []
+package = "earthkit-data"
+python-version-input = "python-version"
+ref = "develop"
+repo = "ecmwf/earthkit-data"
+
+[[deps]]
+compiler-inputs = []
+package = "earthkit-geo"
+python-version-input = "python-version"
+ref = "develop"
+repo = "ecmwf/earthkit-geo"
+
+[[deps]]
+compiler-inputs = []
+package = "earthkit-meteo"
+python-version-input = "python-version"
+ref = "develop"
+repo = "ecmwf/earthkit-meteo"
+
+[[deps]]
+compiler-inputs = []
+package = "earthkit-hydro"
+python-version-input = "python-version"
+ref = "develop"
+repo = "ecmwf/earthkit-hydro"
+
+[[deps]]
+compiler-inputs = []
+package = "earthkit-transforms"
+python-version-input = "python-version"
+ref = "develop"
+repo = "ecmwf/earthkit-transforms"
+
+[[deps]]
+compiler-inputs = []
+package = "earthkit-plots"
+python-version-input = "python-version"
+ref = "develop"
+repo = "ecmwf/earthkit-plots"
+
+# A pure-Python upstream, built on the GitHub runner rather than in this container.
+[[deps]]
+build-type-input = "python-build-type"
+compiler-inputs = []
+package = "earthkit-utils"
+platform-input = "python-platform"
+python-version-input = "python-version"
+ref = "develop"
+repo = "ecmwf/earthkit-utils"
+
+[matrix.test]
+triggers = ["upstream-change", "rebuild-request"]
+
+# The container and compiler of the eccodes, odc, and fdb builds, whose libraries earthkit-data loads.
+[matrix.test.defaults]
+build-type = "RelWithDebInfo"
+c-compiler = "gcc-13"
+container = "eccr.ecmwf.int/public-ci-images/ubuntu24.04-gcc13-gfortran13"
+cxx-compiler = "g++-13"
+extras = "test"
+job-script = "./.ci/test.sh.j2"
+platform = "ubuntu-24.04"
+pytest-args = "--forked -vv"
+python-build-type = "Release"
+python-platform = "gh-ubuntu-26.04"
+runs-on = "ubuntu-latest"
+
+[[matrix.test.include]]
+python-version = "3.11"
+
+[[matrix.test.include]]
+python-version = "3.12"
+
+[[matrix.test.include]]
+python-version = "3.13"
+
+[package]
+allow-stale-deps = true
+ci-pre-commit = false
+compiler-inputs = []
+fork-pull-requests = false
+full-history = true
+name = "earthkit"
+repo = "ecmwf/earthkit"
+visibility = "public"

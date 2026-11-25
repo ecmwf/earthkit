@@ -1,0 +1,14 @@
+{% extends "ci-infrastructure/python-runner.sh.j2" %}
+{% block set_environment %}
+# fetch-deps puts each dep's lib dirs on LD_LIBRARY_PATH, where findlibs finds them;
+# eccodes still needs its definitions and samples.
+IFS=';:' read -ra dep_prefixes <<<"${CMAKE_PREFIX_PATH:-}"
+for prefix in ${dep_prefixes[@]+"${dep_prefixes[@]}"}; do
+  if [ -d "$prefix/share/eccodes/definitions" ]; then
+    export ECCODES_DEFINITION_PATH="$prefix/share/eccodes/definitions"
+    export ECCODES_SAMPLES_PATH="$prefix/share/eccodes/samples"
+  fi
+done
+# earthkit-geo imports eckit and mir-python from PyPI, which load their *lib wheels through findlibs' package lookup.
+export FINDLIBS_DISABLE_PACKAGE=no
+{% endblock %}
