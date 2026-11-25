@@ -65,7 +65,7 @@ platform = "ubuntu-24.04"
 pytest-args = "--forked -vv"
 python-build-type = "Release"
 python-platform = "gh-ubuntu-26.04"
-runs-on = "ubuntu-latest"
+runs-on = "ubuntu-24.04"
 
 [[matrix.test.include]]
 python-version = "3.11"
