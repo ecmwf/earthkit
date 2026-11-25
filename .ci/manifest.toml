@@ -77,6 +77,7 @@ python-version = "3.12"
 python-version = "3.13"
 
 [package]
+allow-stale-deps = true
 ci-pre-commit = false
 compiler-inputs = []
 fork-pull-requests = false
