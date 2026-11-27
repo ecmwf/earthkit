@@ -63,6 +63,15 @@ Have a feature request or found a bug? Feel free to open an
 
 
 .. toctree::
+   :caption: Concepts
+   :maxdepth: 2
+   :hidden:
+
+   concepts/index
+
+
+
+.. toctree::
    :maxdepth: 1
    :caption: Developer guide
    :hidden:
