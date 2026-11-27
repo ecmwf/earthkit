@@ -34,7 +34,7 @@ dynamic = ["version"]
 license = "Apache-2.0"
 license-files = ["LICENSE"]
 name = "earthkit"
-optional-dependencies.test = ["pytest", "pytest-forked"]
+optional-dependencies.test = ["pytest<9.2", "pytest-forked"]
 readme = "README.md"
 requires-python = ">=3.10"
 urls.Documentation = "https://earthkit.readthedocs.io/"
